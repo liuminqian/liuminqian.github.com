@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-08-25T22:41:31+08:00</updated>
+  <updated>2013-08-25T22:49:54+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[MooooooQ]]></name>
@@ -92,8 +92,9 @@
 
 <h6>1. TODO: (加个空格) 和 FIXME: (加个空格)</h6>
 
-<p>在注释中，加入这两个关键字，可以让你查看方法(control + 6)时，看到这段文字（如图3 所示），也可以App build的时候，在该处有Warning。
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-064a5561f16c98ba82c3c2eff979558f.png" alt="图3查看方法" /></p>
+<p>在注释中，加入这两个关键字，可以让你查看方法(control + 6)时，看到这段文字（如图3 所示），也可以App build的时候，在该处有Warning。</p>
+
+<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-064a5561f16c98ba82c3c2eff979558f.png" alt="图3查看方法" /></p>
 
 <h6>图3 方法查看</h6>
 
@@ -102,7 +103,7 @@
 <p>介绍：Mac上自带的一款软件，只要通过点击拖拽鼠标等操作就可以将一系列动作组合成一个工作流，从而帮助你自动的(可重复的)完成一些复杂的工作。
 eg，我们需要对头文件中的import进来的文件，进行代码风格统一(按Google Style)。如果文件一多，手工地去完成这件事情将浪费大量时间。这时候，通Automator 就能很方便地完成这个任务。</p>
 
-<h6>主要步骤如下：</h6>
+<h4>主要步骤如下：</h4>
 
 <ol>
 <li>打开Automator，选中服务(Service)，如图4所示：
@@ -148,7 +149,7 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
 
 <p><img src="http://publicopensource.qiniudn.com/2_01.png" height="319" width="" algin="middle" /></p>
 
-<h4>图1</h4>
+<h6>图1</h6>
 
 <p>如上图所示，将应用开发分两个阶段:基础(图左)和拓展(图右)。</p>
 
