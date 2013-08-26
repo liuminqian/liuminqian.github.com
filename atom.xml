@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-08-27T07:33:42+08:00</updated>
+  <updated>2013-08-27T07:37:56+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[MooooooQ]]></name>
@@ -186,7 +186,7 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
 
 <h4>&mdash;-深化</h4>
 
-<p>经过大量阅读和实践之后，做做开发工作已经远远不能满足你了。你应该去思考一些高级话题，我将这个分为三个断点，对应不同阶段:</p>
+<p>经过大量阅读和实践之后，做做开发工作已经远远不能满足你了。你应该去思考一些高级话题。我归纳为三个断点，对应不同阶段:</p>
 
 <ol>
 <li>已有：这个app的容器该如何去设计，是用MVC来规范整个app还是用MVCS，用纯native、还是纯web或者hybrid，等等</li>
