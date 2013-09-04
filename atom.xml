@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-03T22:52:59+08:00</updated>
+  <updated>2013-09-04T08:48:31+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[MooooooQ]]></name>
@@ -20,36 +20,50 @@
     <id>http://liuminqian.github.io/blog/2013/09/02/nsscreencastbi-ji</id>
     <content type="html"><![CDATA[<p><em>keywords:</em> nsscreencast, iOS开发, 笔记</p>
 
-<p>(未完待续)</p>
-
 <p><a href="http://nsscreencast.com/">nsscreencast</a>需要翻墙，每周都发布一个关于iOS开发的screencast，并将每个screencast的sample code放在<a href="https://github.com/subdigital/nsscreencast">这里</a>，内容大多适合基础学习。</p>
 
 <p>这里我将每周的东西进行了简单整理和分类，去除了一些我认为内涵比较少的内容。其中我将这些内容都放到Evernote，这样和其他内容一起，检索非常方便。</p>
 
 <h4>推荐</h4>
 
-<p>每个推荐在下面每个条目前有 (推荐) 字样，推荐的内容可以详细的看下:</p>
+<p>每个推荐在下面每个条目前有 (<em>推荐</em>) 字样，推荐的内容可以详细的看下:</p>
 
 <pre><code>11(CoreData基础)、15（HTTP Caching)、20(解析app)、24(Pull to Refresh)、35(Autolayout)、
 55(版本管理)、68(Xcode Project Templates)、69(NSFetchedResultsController)、72(Objective-C Collections)、
-73(SSL Pinning)
+73(SSL Pinning)、76(从字符串中提取数据的三种方式)
 </code></pre>
 
 <h4>所有</h4>
 
-<p>74.OAuth2:并介绍了<a href="http://developer.apple.com/library/ios/#DOCUMENTATION/iPhone/Conceptual/iPhoneOSProgrammingGuide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW50">Implementing Custom URL Schemes</a>。</p>
+<p>82.TDD View Controllers with Specta and OCMock: <a href="http://ocmock.org/">OCMock</a>。</p>
 
-<p>(推荐)73.SSL Pinning:如何用过Charles的SSL代理功能，应该就能明白只是简单的搞个证书，面对中间人攻击是不安全的。使用SSL Pinning能解决由Charles等带来的这类攻击。建议翻墙细看，这里不贴相关链接。</p>
+<p>81.Associated Objects: 工程中最常见的Runtime用法， objc_setAssociatedObject和objc_getAssociatedObject。</p>
 
-<p>(推荐)72.Objective-C Collections:使用和比较了NSSet,NSArray,NSOrderedSet和NSDictionary的性能等。</p>
+<p>80.PaintCode: 矢量绘图，<a href="http://paintcodeapp.com/">网址</a>。</p>
 
-<p>71.深入使用NSNumberFormatter:<a href="http://useyourloaf.com/blog/2012/06/14/using-number-formatters.html">高级用法</a>。</p>
+<p>79.Sketch: 矢量绘图，<a href="http://www.bohemiancoding.com/sketch/">Sketch</a>和<a href="http://sketchmine.co/">Sketchmine</a></p>
+
+<p>78.TDD Money(第二部分)</p>
+
+<p>77.TDD Money with Specta and Expecta(第一部分): <a href="https://github.com/specta/specta">Specta</a>、<a href="https://github.com/specta/expecta">Expecta</a>和<a href="http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530">Test Driven Development by Example</a>。</p>
+
+<p>(<em>推荐</em>)76.从字符串中提取数据的三种方式:NSRegular，<a href="http://nshipster.com/nsdatadetector/">NSDataDector</a>，<a href="http://nshipster.com/nslinguistictagger/">NSLinguisticTagger</a>。</p>
+
+<p>75.自定义UIScrollView: 一种用法</p>
+
+<p>74.OAuth2: 并介绍了<a href="http://developer.apple.com/library/ios/#DOCUMENTATION/iPhone/Conceptual/iPhoneOSProgrammingGuide/AdvancedAppTricks/AdvancedAppTricks.html#//apple_ref/doc/uid/TP40007072-CH7-SW50">Implementing Custom URL Schemes</a>。</p>
+
+<p>(<em>推荐</em>)73.SSL Pinning: 如果用过Charles的SSL代理功能，应该就能明白只是简单的搞个证书，面对中间人攻击是不安全的。使用SSL Pinning能解决由Charles等带来的这类攻击。建议翻墙细看，这里不贴相关链接。</p>
+
+<p>(<em>推荐</em>)72.Objective-C Collections: 使用和比较了NSSet,NSArray,NSOrderedSet和NSDictionary的性能等。</p>
+
+<p>71.深入使用NSNumberFormatter: <a href="http://useyourloaf.com/blog/2012/06/14/using-number-formatters.html">高级用法</a>。</p>
 
 <p>70.Autolayout with Cells</p>
 
-<p>(推荐)69.NSFetchedResultsController:正确响应NSManagedObjectContext的变化，和对应的UITableView的变化。</p>
+<p>(<em>推荐</em>)69.NSFetchedResultsController: 正确响应NSManagedObjectContext的变化，和对应的UITableView的变化。</p>
 
-<p>(推荐)68.Xcode Project Templates: 介绍了Xcode项目模版的制作。<a href="http://meandmark.com/blog/2011/12/creating-custom-xcode-4-project-templates/">Blog &ndash; Creating Custom Xcode 4 Project Templates</a>、<a href="https://snipt.net/yonishin/about-xcode-4-project-template/">About Xcode 4 Project Templates</a>、<a href="https://github.com/AFNetworking/Xcode-Project-Templates/">AFNetworking&rsquo;s Project Templates</a>和<a href="https://github.com/borealkiss/Minimal-Template">Borealkiss&rsquo;s Minimal Templates</a>。</p>
+<p>(<em>推荐</em>)68.Xcode Project Templates: 介绍了Xcode项目模版的制作。<a href="http://meandmark.com/blog/2011/12/creating-custom-xcode-4-project-templates/">Blog &ndash; Creating Custom Xcode 4 Project Templates</a>、<a href="https://snipt.net/yonishin/about-xcode-4-project-template/">About Xcode 4 Project Templates</a>、<a href="https://github.com/AFNetworking/Xcode-Project-Templates/">AFNetworking&rsquo;s Project Templates</a>和<a href="https://github.com/borealkiss/Minimal-Template">Borealkiss&rsquo;s Minimal Templates</a>。</p>
 
 <p>67.Map Overlays</p>
 
@@ -69,15 +83,15 @@
 
 <p>59.Windows Azure Mobile Services(第一部分)</p>
 
-<p>(推荐)58.Container View Controllers: <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UIViewController_Class/Reference/Reference.html">UIViewController Class Reference</a>中&#8221;Implementing a Container View Controller&#8221;</p>
+<p>(<em>推荐</em>)58.Container View Controllers: <a href="http://developer.apple.com/library/ios/#documentation/uikit/reference/UIViewController_Class/Reference/Reference.html">UIViewController Class Reference</a>中&#8221;Implementing a Container View Controller&#8221;</p>
 
 <p>57.整合Facebook</p>
 
 <p>56.整合Twitter: 还介绍了一个Xcode插件<a href="https://github.com/ksuther/KSImageNamed-Xcode">KSImageNamed-Xcode</a>，用于自动补全图片文件名并显示该图片。</p>
 
-<p>(推荐)55.版本管理: <a href="http://semver.org/">Semver</a>详细介绍了版本管理 和 <a href="https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man8/agvtool.8.html">AGVTool</a>是Xcode build的工具。</p>
+<p>(<em>推荐</em>)55.版本管理: <a href="http://semver.org/">Semver</a>详细介绍了版本管理 和 <a href="https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man8/agvtool.8.html">AGVTool</a>是Xcode build的工具。</p>
 
-<p>54.Pony Debugger: 调试工具<a href="https://github.com/square/PonyDebugger">Github 地址</a>，其使用<a href="https://github.com/square/PonyDebugger">SocketRocket</a>作为WebSocketclient。</p>
+<p>54.Pony Debugger: 调试工具<a href="https://github.com/square/PonyDebugger">Github 地址</a>，其使用<a href="https://github.com/square/PonyDebugger">SocketRocket</a>作为WebSocket Client。</p>
 
 <p>53.RestKit-Object Manager</p>
 
@@ -115,7 +129,7 @@
 
 <p>36.UITableView搜索: 介绍了如何在UITableView上增加搜索。</p>
 
-<p>(推荐)35.Autolayout: 还有其他链接和tips，建议直接去看下，就不贴了。</p>
+<p>(<em>推荐</em>)35.Autolayout: 还有其他链接和tips，建议直接去看下，就不贴了。</p>
 
 <p><del>34.App升级到iOS 6和 iPhone 5: 现在应该都支持了</del></p>
 
@@ -137,7 +151,7 @@
 
 <p>25.自定义Picker(第1部分)</p>
 
-<p>(推荐)24.Pull to Refresh: 使用<a href="https://github.com/samsoffes/sspulltorefresh">SSPullToRefresh</a>来完成下拉刷新，同时也介绍了<a href="https://github.com/nothingmagical/cheddar-ios">开源App Cheddar</a>，其中这款App的很多做法值得借鉴。</p>
+<p>(<em>推荐</em>)24.Pull to Refresh: 使用<a href="https://github.com/samsoffes/sspulltorefresh">SSPullToRefresh</a>来完成下拉刷新，同时也介绍了<a href="https://github.com/nothingmagical/cheddar-ios">开源App Cheddar</a>，其中这款App的很多做法值得借鉴。</p>
 
 <p>23.Storyboards基础: <a href="http://www.raywenderlich.com/5138/beginning-storyboards-in-ios-5-part-1">Beginning Storyboards in iOS 5 (Ray Wenderlich&rsquo;s Blog)</a></p>
 
@@ -145,7 +159,7 @@
 
 <p>21.自定义UINavigationBar</p>
 
-<p>(推荐)20.解析app: 介绍了一些常用的工具来解析一个app，都是非越狱就能完成的。不过这里，我建议<a href="http://www.macroplant.com/iexplorer/">iExplorer</a>和<a href="http://www.charlesproxy.com/">Charles</a>，用这两个基本上就可以了。iExplorer简单解析app结构和资源，Charles来inspect network。</p>
+<p>(<em>推荐</em>)20.解析app: 介绍了一些常用的工具来解析一个app，都是非越狱就能完成的。不过这里，我建议<a href="http://www.macroplant.com/iexplorer/">iExplorer</a>和<a href="http://www.charlesproxy.com/">Charles</a>，用这两个基本上就可以了。iExplorer简单解析app结构和资源，Charles来inspect network。</p>
 
 <p>19.推送(Push Notifications)基础: 介绍了如何利用Rails和Urban Airship(第三方api)等来完成前后端。</p>
 
@@ -155,7 +169,7 @@
 
 <p>16.KVO基础: <a href="http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html">Key Value Observing Programming Guide</a>、<a href="http://www.dribin.org/dave/blog/archives/2008/09/24/proper_kvo_usage/">Proper use of KVO</a>和<a href="http://www.mikeash.com/pyblog/key-value-observing-done-right.html">KVO Done Right</a>。</p>
 
-<p>(推荐)15.HTTP Caching: 还有其他链接<a href="https://github.com/rs/SDURLCache">SDURLCache</a>、<a href="http://www.charlesproxy.com/">Charles Proxy</a>、<a href="http://cache-tester.herokuapp.com/">Sample web app w/ API</a>和<a href="https://devcenter.heroku.com/articles/ios-network-caching-http-headers">Heroku Dev Center article on iOS HTTP Caching</a>。</p>
+<p>(<em>推荐</em>)15.HTTP Caching: 还有其他链接<a href="https://github.com/rs/SDURLCache">SDURLCache</a>、<a href="http://www.charlesproxy.com/">Charles Proxy</a>、<a href="http://cache-tester.herokuapp.com/">Sample web app w/ API</a>和<a href="https://devcenter.heroku.com/articles/ios-network-caching-http-headers">Heroku Dev Center article on iOS HTTP Caching</a>。</p>
 
 <p>14.跟踪下载进度条</p>
 
@@ -163,7 +177,7 @@
 
 <p>12.将JSON存到CoreData</p>
 
-<p>(推荐)11.CoreData基础: 推荐看下，还有其他链接<a href="http://pragprog.com/book/mzcd/core-data">Core Data Book &ndash; Marcus Zarra</a>、<a href="http://pragprog.com/book/cdirec/ios-recipes">iOS Recipes </a>、<a href="http://rentzsch.github.com/mogenerator/">Mogenerator</a>和<a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreData/Articles/cdBasics.html">Core Data Programming Guide </a>。</p>
+<p>(<em>推荐</em>)11.CoreData基础: 推荐看下，还有其他链接<a href="http://pragprog.com/book/mzcd/core-data">Core Data Book &ndash; Marcus Zarra</a>、<a href="http://pragprog.com/book/cdirec/ios-recipes">iOS Recipes </a>、<a href="http://rentzsch.github.com/mogenerator/">Mogenerator</a>和<a href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CoreData/Articles/cdBasics.html">Core Data Programming Guide </a>。</p>
 
 <p>10.Block基础: <a href="http://benscheirman.com/2012/01/careful-with-block-based-notification-handlers">Careful with Block Based Notification Handlers</a>和<a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/ConcurrencyProgrammingGuide/OperationQueues/OperationQueues.html">Concurrency Programming Guide</a>。</p>
 
