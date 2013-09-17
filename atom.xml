@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-04T08:48:31+08:00</updated>
+  <updated>2013-09-17T10:26:42+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[MooooooQ]]></name>
@@ -34,6 +34,10 @@
 </code></pre>
 
 <h4>所有</h4>
+
+<p>84.xctool: build 和 test app, <a href="https://github.com/facebook/xctool">xctool</a>。</p>
+
+<p>83.TDD View Controllers(第二部分)</p>
 
 <p>82.TDD View Controllers with Specta and OCMock: <a href="http://ocmock.org/">OCMock</a>。</p>
 
