@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-17T10:31:44+08:00</updated>
+  <updated>2013-09-17T10:36:21+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[MooooooQ]]></name>
@@ -19,6 +19,8 @@
     <updated>2013-09-02T23:15:00+08:00</updated>
     <id>http://liuminqian.github.io/blog/2013/09/02/nsscreencastbi-ji</id>
     <content type="html"><![CDATA[<p><em>keywords:</em> nsscreencast, iOS开发, 笔记</p>
+
+<h2>不继续跟,内容没那么吸引人了(截至9/17/2013)</h2>
 
 <p><a href="http://nsscreencast.com/">nsscreencast</a>需要翻墙，每周都发布一个关于iOS开发的screencast，并将每个screencast的sample code放在<a href="https://github.com/subdigital/nsscreencast">这里</a>，内容大多适合基础学习。</p>
 
