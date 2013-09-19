@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-19T22:47:43+08:00</updated>
+  <updated>2013-09-19T22:54:35+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[MooooooQ]]></name>
@@ -22,7 +22,7 @@
 
 <p>对于NSLog，分为三块:基本格式、小技巧和第三方工具。</p>
 
-<p>NSLog定义在NSObjCRuntime.h中，如下所示：void NSLog(NSString *format, …);</p>
+<p>NSLog定义在NSObjCRuntime.h中，如下所示：void NSLog(NSString *format, …)。</p>
 
 <h2>一、基本格式</h2>
 
