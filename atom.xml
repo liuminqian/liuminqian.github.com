@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-19T22:42:50+08:00</updated>
+  <updated>2013-09-19T22:44:08+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[MooooooQ]]></name>
@@ -69,7 +69,7 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
 
 <p>1.<a href="https://github.com/robbiehanson/CocoaLumberjack">CocoaLumberjack</a> 和 <a href="https://github.com/fpillet/NSLogger">NSLogger</a></p>
 
-<p>介绍：快速、简单、强大和灵活的log框架。有不同的打印级别、日志管理等。</p>
+<p>介绍：提供了高级日志行为，比如记录日志到文件、网络，根据日志级别来筛选（info,debug,warn,error）</p>
 
 <p>教程可参考<a href="http://m.oschina.net/blog/96934">这里</a></p>
 
