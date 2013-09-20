@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>关于NSLog的那点事 - MooooooQ</title>
+  <title>iOS Dev Weekly 笔记 - MooooooQ</title>
   <meta name="author" content="MooooooQ">
 
   
-  <meta name="description" content="keywords: NSLog, NSLogger, CocoaLumberjack, ColorLog 对于NSLog，分为三块:基本格式、小技巧和第三方工具。 NSLog定义在NSObjCRuntime.h中，如下所示：void NSLog(NSString *format, …)。 一、 &hellip;">
+  <meta name="description" content="iOS Dev Weekly每周会发表关于iOS开发方面的News, Tools, Code, Design和Business。你可以订阅下。 下面并没有包含iosdevweekly的所有内容。 笔记 Issue 111 &ndash; 13/09/2013 iBeacon and the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liuminqian.github.io/blog/2013/09/19/guan-yu-nslogde-na-dian-shi">
+  <link rel="canonical" href="http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="MooooooQ" type="application/atom+xml">
@@ -69,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">关于NSLog的那点事</h1>
+      <h1 class="entry-title">iOS Dev Weekly 笔记</h1>
     
     
       <p class="meta">
@@ -85,7 +85,7 @@
   
 
 
-<time datetime="2013-09-19T15:04:00+08:00" pubdate data-updated="true">Sep 19<span>th</span>, 2013</time>
+<time datetime="2013-09-20T11:45:00+08:00" pubdate data-updated="true">Sep 20<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -94,66 +94,37 @@
   </header>
 
 
-<div class="entry-content"><p><em>keywords:</em> NSLog, NSLogger, CocoaLumberjack, ColorLog</p>
+<div class="entry-content"><p><a href="http://iosdevweekly.com/">iOS Dev Weekly</a>每周会发表关于iOS开发方面的News, Tools, Code, Design和Business。你可以订阅下。</p>
 
-<p>对于NSLog，分为三块:基本格式、小技巧和第三方工具。</p>
+<p>下面并没有包含iosdevweekly的所有内容。</p>
 
-<p>NSLog定义在NSObjCRuntime.h中，如下所示：void NSLog(NSString *format, …)。</p>
+<h2>笔记</h2>
 
-<h2>一、基本格式</h2>
+<p><strong>Issue 111</strong> &ndash; 13/09/2013</p>
 
-<p>%@ 对象 <br/>
-%d, %i 整数 <br/>
-%u   无符整形 <br/>
-%f 浮点/双字 <br/>
-%x, %X 二进制整数 <br/>
-%o 八进制整数 <br/>
-%zu size_t <br/>
-%p 指针 <br/>
-%e   浮点/双字 （科学计算） <br/>
-%g   浮点/双字 <br/>
-%s C 字符串 <br/>
-%.*s Pascal字符串 <br/>
-%c 字符 <br/>
-%C unichar <br/>
-%lld 64位长整数（long long） <br/>
-%llu   无符64位长整数 <br/>
-%Lf 64位双字</p>
+<ul>
+<li><a href="http://gigaom.com/2013/09/10/with-ibeacon-apple-is-going-to-dump-on-nfc-and-embrace-the-internet-of-things">iBeacon and the internet of things</a> ：介绍了iBeacon，以及其和NFC的比较。</li>
+<li><a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/Introduction/Introduction.html">64-Bit Transition Guide for Cocoa Touch</a>：Cocoa Touch 64位过渡指南。</li>
+<li><a href="http://jamesdempsey.net/2013/09/10/updated-ios-device-summary-with-iphone-5s-and-iphone-5c">Updated iOS Device Summary with iPhone 5S and iPhone 5C</a></li>
+<li><a href="http://mjtsai.com/blog/2013/09/10/arc-vs-mrc-performance">ARC vs. MRC Performance</a>：ARC 和 MRC的性能比较，建议看下，当然不是建议放弃ARC。</li>
+<li><a href="https://github.com/robotmedia/RMStore">RMStore</a>：应用内购买(IAP)的轻量级框架。</li>
+<li><a href="http://www.politepix.com/2013/08/26/openears-1-5">OpenEars, with Spanish</a>：OpenEars是一个离线的语音识别和text-to-speech（文字语音转换，TTS）开发工具包，原先只支持English，现在支持Spanish，中文使用教程可参考<a href="http://blog.sina.com.cn/s/blog_4b55f6860101e5an.html">这里</a>。</li>
+<li><a href="https://gist.github.com/steipete/6526860">UIKitLegacyDetector</a>：检测你的app是不是在跑新的iOS 7 UI。</li>
+<li><a href="https://github.com/JaviSoto/iOS7-Runtime-Headers/commit/6ccf9c4526992fec0dc414d48e4a3f7446e9822f#commitcomment-4060336">isYoMamaWearsFancyGlassesDetectionEnabled</a>：iOS 7中，有一些非常有趣的API。</li>
+</ul>
 
-<p>参考<a href="http://blog.csdn.net/linzhiji/article/details/6933173">这里</a></p>
 
-<h2>二、小技巧</h2>
+<p><strong>Issue 110</strong> &ndash; 6/09/2013</p>
 
-<p>1.当前源文件的名字、行数、当前的函数名:</p>
+<ul>
+<li><a href="http://danieltull.co.uk/blog/2013/09/05/easier-merging-of-xcode-project-files/">Easier merging of Xcode project files</a>：使merge Xcode文件变得简单，从<a href="https://github.com/WebKit/webkit/blob/master/Tools/Scripts/sort-Xcode-project-file">WebKit</a>项目里发现的一小段脚本，不过也有一点坑，有兴趣的看下。</li>
+<li><a href="http://ios.devtools.me/?utm_source=iOS+Dev+Weekly&amp;utm_campaign=iOS_Dev_Weekly_Issue_110&amp;utm_medium=email">iOS Dev Tools</a>：iOS常用开发工具，国内有一篇对另外一篇类似的翻译文章，点 <a href="http://xiaojiayi.com/">这里</a>。</li>
+<li><a href="http://koboldkit.com/">Kobold Kit</a>：基于Sprite Kit的游戏引擎，<a href="https://github.com/KoboldKit/KoboldKit">Github 地址</a>。</li>
+<li><a href="http://www.raywenderlich.com/46988/ios-design-patterns?utm_source=iOS+Dev+Weekly&amp;utm_campaign=iOS_Dev_Weekly_Issue_110&amp;utm_medium=email">iOS Design Patterns</a>：iOS设计模式，发在raywenderlich上，中文翻译点<a href="http://xmuzyq.iteye.com/blog/1942376">这里</a>。</li>
+<li><a href="https://github.com/ccgus/fmpsd">FMPSD</a>：读写PSD图片。</li>
+<li><a href="https://github.com/claaslange/iOS7Colors">iOS7Colors</a>：标准的iOS 7 Colors</li>
+</ul>
 
-<p>  参考<a href="http://blog.csdn.net/a2657222/article/details/8033555">这里</a></p>
-
-<pre><code>__FILE__，__LINE__，  __func__（ 或者 NSStringFromSelector(_cmd) ）
-
-printf("%s\nLine %d:\n", __FILE__, __LINE__);
-</code></pre>
-
-<p>2.控制台中NSLog的输出格式等</p>
-
-<p>  有兴趣请参考<a href="http://blog.cnrainbird.com/index.php/2012/10/21/xiu_gai_nslog_de_shu_chu_ge_shi_yi_ji_shi_fou_shu_chu/">这里</a>和<a href="http://stackoverflow.com/questions/969130/how-to-print-out-the-method-name-and-line-number-and-conditionally-disable-nslog">这里</a>，比如是否打印当前文件名、行数等。</p>
-
-<p>3.控制台中信息的颜色插件<a href="https://github.com/DeepIT/ColorLog">ColorLog</a></p>
-
-<h2>三、第三方工具</h2>
-
-<p>常见的第三方工具有:<a href="https://github.com/robbiehanson/CocoaLumberjack">CocoaLumberjack</a> 和 <a href="https://github.com/fpillet/NSLogger">NSLogger</a>。</p>
-
-<p>1.<a href="https://github.com/robbiehanson/CocoaLumberjack">CocoaLumberjack</a> 和 <a href="https://github.com/fpillet/NSLogger">NSLogger</a></p>
-
-<p>介绍：提供了高级日志行为，比如记录日志到文件、网络，根据日志级别来筛选（info,debug,warn,error）。</p>
-
-<p>教程可参考<a href="http://m.oschina.net/blog/96934">这里</a></p>
-
-<p>2.<a href="https://github.com/fpillet/NSLogger">NSLogger</a></p>
-
-<p>介绍：对NSLog的增强，可以标签输出，优先级查找，直接输出图像，多线程标记，时序控制，甚至是通过网络log到别人的终端或者是从别人的终端程序中记录log。</p>
-
-<p>教程可参考<a href="http://doruby.com/blog/2012/12/27/hello-world/">这里</a>或 <a href="http://ishalou.com/blog/2012/10/20/how-to-use-nslogger/">这里</a>。</p>
 </div>
 
 
@@ -176,7 +147,7 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
   
 
 
-<time datetime="2013-09-19T15:04:00+08:00" pubdate data-updated="true">Sep 19<span>th</span>, 2013</time>
+<time datetime="2013-09-20T11:45:00+08:00" pubdate data-updated="true">Sep 20<span>th</span>, 2013</time>
       
 
 
@@ -184,7 +155,7 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liuminqian.github.io/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/" data-via="" data-counturl="http://liuminqian.github.io/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji/" data-via="" data-counturl="http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji/" >Tweet</a>
   
   
   
@@ -193,10 +164,8 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/09/02/nsscreencastbi-ji/" title="Previous Post: nsscreencast笔记">&laquo; nsscreencast笔记</a>
+        <a class="basic-alignment left" href="/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/" title="Previous Post: 关于NSLog的那点事">&laquo; 关于NSLog的那点事</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/09/20/ios-dev-weekly-bi-ji/" title="Next Post: iOS Dev Weekly 笔记">iOS Dev Weekly 笔记 &raquo;</a>
       
     </p>
   </footer>
@@ -263,8 +232,8 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://liuminqian.github.io/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/';
-        var disqus_url = 'http://liuminqian.github.io/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/';
+        var disqus_identifier = 'http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji/';
+        var disqus_url = 'http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji/';
         var disqus_script = 'embed.js';
       
     (function () {

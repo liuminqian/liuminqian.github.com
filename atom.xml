@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-19T22:54:35+08:00</updated>
+  <updated>2013-09-20T11:51:34+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[MooooooQ]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS Dev Weekly 笔记]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji/"/>
+    <updated>2013-09-20T11:45:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji</id>
+    <content type="html"><![CDATA[<p><a href="http://iosdevweekly.com/">iOS Dev Weekly</a>每周会发表关于iOS开发方面的News, Tools, Code, Design和Business。你可以订阅下。</p>
+
+<p>下面并没有包含iosdevweekly的所有内容。</p>
+
+<h2>笔记</h2>
+
+<p><strong>Issue 111</strong> &ndash; 13/09/2013</p>
+
+<ul>
+<li><a href="http://gigaom.com/2013/09/10/with-ibeacon-apple-is-going-to-dump-on-nfc-and-embrace-the-internet-of-things">iBeacon and the internet of things</a> ：介绍了iBeacon，以及其和NFC的比较。</li>
+<li><a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/CocoaTouch64BitGuide/Introduction/Introduction.html">64-Bit Transition Guide for Cocoa Touch</a>：Cocoa Touch 64位过渡指南。</li>
+<li><a href="http://jamesdempsey.net/2013/09/10/updated-ios-device-summary-with-iphone-5s-and-iphone-5c">Updated iOS Device Summary with iPhone 5S and iPhone 5C</a></li>
+<li><a href="http://mjtsai.com/blog/2013/09/10/arc-vs-mrc-performance">ARC vs. MRC Performance</a>：ARC 和 MRC的性能比较，建议看下，当然不是建议放弃ARC。</li>
+<li><a href="https://github.com/robotmedia/RMStore">RMStore</a>：应用内购买(IAP)的轻量级框架。</li>
+<li><a href="http://www.politepix.com/2013/08/26/openears-1-5">OpenEars, with Spanish</a>：OpenEars是一个离线的语音识别和text-to-speech（文字语音转换，TTS）开发工具包，原先只支持English，现在支持Spanish，中文使用教程可参考<a href="http://blog.sina.com.cn/s/blog_4b55f6860101e5an.html">这里</a>。</li>
+<li><a href="https://gist.github.com/steipete/6526860">UIKitLegacyDetector</a>：检测你的app是不是在跑新的iOS 7 UI。</li>
+<li><a href="https://github.com/JaviSoto/iOS7-Runtime-Headers/commit/6ccf9c4526992fec0dc414d48e4a3f7446e9822f#commitcomment-4060336">isYoMamaWearsFancyGlassesDetectionEnabled</a>：iOS 7中，有一些非常有趣的API。</li>
+</ul>
+
+
+<p><strong>Issue 110</strong> &ndash; 6/09/2013</p>
+
+<ul>
+<li><a href="http://danieltull.co.uk/blog/2013/09/05/easier-merging-of-xcode-project-files/">Easier merging of Xcode project files</a>：使merge Xcode文件变得简单，从<a href="https://github.com/WebKit/webkit/blob/master/Tools/Scripts/sort-Xcode-project-file">WebKit</a>项目里发现的一小段脚本，不过也有一点坑，有兴趣的看下。</li>
+<li><a href="http://ios.devtools.me/?utm_source=iOS+Dev+Weekly&amp;utm_campaign=iOS_Dev_Weekly_Issue_110&amp;utm_medium=email">iOS Dev Tools</a>：iOS常用开发工具，国内有一篇对另外一篇类似的翻译文章，点 <a href="http://xiaojiayi.com/">这里</a>。</li>
+<li><a href="http://koboldkit.com/">Kobold Kit</a>：基于Sprite Kit的游戏引擎，<a href="https://github.com/KoboldKit/KoboldKit">Github 地址</a>。</li>
+<li><a href="http://www.raywenderlich.com/46988/ios-design-patterns?utm_source=iOS+Dev+Weekly&amp;utm_campaign=iOS_Dev_Weekly_Issue_110&amp;utm_medium=email">iOS Design Patterns</a>：iOS设计模式，发在raywenderlich上，中文翻译点<a href="http://xmuzyq.iteye.com/blog/1942376">这里</a>。</li>
+<li><a href="https://github.com/ccgus/fmpsd">FMPSD</a>：读写PSD图片。</li>
+<li><a href="https://github.com/claaslange/iOS7Colors">iOS7Colors</a>：标准的iOS 7 Colors</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[关于NSLog的那点事]]></title>
