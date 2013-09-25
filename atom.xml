@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2013-09-25T15:16:30+08:00</updated>
-  <id>http://yoursite.com/</id>
+  <title><![CDATA[MooooooQ]]></title>
+  <link href="liuminqian.github.com/atom.xml" rel="self"/>
+  <link href="liuminqian.github.com/"/>
+  <updated>2013-09-25T15:22:06+08:00</updated>
+  <id>liuminqian.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Minqian Liu]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[iOS博客列表]]></title>
-    <link href="http://yoursite.com/blog/2013/09/25/iosbo-ke-lie-biao/"/>
+    <link href="liuminqian.github.com/blog/2013/09/25/iosbo-ke-lie-biao/"/>
     <updated>2013-09-25T12:23:00+08:00</updated>
-    <id>http://yoursite.com/blog/2013/09/25/iosbo-ke-lie-biao</id>
+    <id>liuminqian.github.com/blog/2013/09/25/iosbo-ke-lie-biao</id>
     <content type="html"><![CDATA[<p>下面收集了国内外比较好的iOS方面的博客。每周会从这里选些有意思的玩意儿来作为每周更新的材料。</p>
 
 <p>博客不错的土豪们请和<a href="http://weibo.com/u/3802884071">@我</a>做朋友，拜托了！</p>
@@ -60,9 +60,9 @@
   
   <entry>
     <title type="html"><![CDATA[iOS Dev Weekly 笔记]]></title>
-    <link href="http://yoursite.com/blog/2013/09/20/ios-dev-weekly-bi-ji/"/>
+    <link href="liuminqian.github.com/blog/2013/09/20/ios-dev-weekly-bi-ji/"/>
     <updated>2013-09-20T11:45:00+08:00</updated>
-    <id>http://yoursite.com/blog/2013/09/20/ios-dev-weekly-bi-ji</id>
+    <id>liuminqian.github.com/blog/2013/09/20/ios-dev-weekly-bi-ji</id>
     <content type="html"><![CDATA[<p><a href="http://iosdevweekly.com/">iOS Dev Weekly</a>每周会发表关于iOS开发方面的News, Tools, Code, Design和Business。你可以订阅下。</p>
 
 <p>下面并没有包含iosdevweekly的所有内容。</p>
@@ -114,9 +114,9 @@
   
   <entry>
     <title type="html"><![CDATA[关于NSLog的那点事]]></title>
-    <link href="http://yoursite.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/"/>
+    <link href="liuminqian.github.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/"/>
     <updated>2013-09-19T15:04:00+08:00</updated>
-    <id>http://yoursite.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi</id>
+    <id>liuminqian.github.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi</id>
     <content type="html"><![CDATA[<p><em>keywords:</em> NSLog, NSLogger, CocoaLumberjack, ColorLog</p>
 
 <p>对于NSLog，分为三块:基本格式、小技巧和第三方工具。</p>
@@ -182,9 +182,9 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
   
   <entry>
     <title type="html"><![CDATA[nsscreencast笔记]]></title>
-    <link href="http://yoursite.com/blog/2013/09/02/nsscreencastbi-ji/"/>
+    <link href="liuminqian.github.com/blog/2013/09/02/nsscreencastbi-ji/"/>
     <updated>2013-09-02T23:15:00+08:00</updated>
-    <id>http://yoursite.com/blog/2013/09/02/nsscreencastbi-ji</id>
+    <id>liuminqian.github.com/blog/2013/09/02/nsscreencastbi-ji</id>
     <content type="html"><![CDATA[<p><em>keywords:</em> nsscreencast, iOS开发, 笔记</p>
 
 <h2>不继续跟,内容没那么吸引人了(截至9/17/2013)</h2>
@@ -376,9 +376,9 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
   
   <entry>
     <title type="html"><![CDATA[提高在Xcode上的工作效率]]></title>
-    <link href="http://yoursite.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/"/>
+    <link href="liuminqian.github.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/"/>
     <updated>2013-08-25T22:36:00+08:00</updated>
-    <id>http://yoursite.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu</id>
+    <id>liuminqian.github.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu</id>
     <content type="html"><![CDATA[<p><em>Key words</em>: Xcode, 效率</p>
 
 <p>对于在Xcode上提高工作效率，内功在这不提，对于外力，我将它分为三类: 工具、快捷键和小技巧。主要获得的路径是通过平时积累和看 <a href="https://developer.apple.com/videos/wwdc/2012/">WWDC12</a> 上的 Session 402:Working Efficiently with Xcode。</p>
@@ -485,9 +485,9 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
   
   <entry>
     <title type="html"><![CDATA[谈iOS程序员升级之路]]></title>
-    <link href="http://yoursite.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu/"/>
+    <link href="liuminqian.github.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu/"/>
     <updated>2013-08-24T22:03:00+08:00</updated>
-    <id>http://yoursite.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu</id>
+    <id>liuminqian.github.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu</id>
     <content type="html"><![CDATA[<p><em>keywords</em>: iOS程序员，升级，成长</p>
 
 <p>抛出这么一篇博文，给大家讨论iOS程序员的升级(有哪些方向、每个方向会有哪些阶段和如何完成)提供聊资。这个题目有点大，限于本人经验非常浅，谈这个不慎惶恐，如有失偏颇，请指出。</p>
