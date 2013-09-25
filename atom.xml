@@ -1,28 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[MooooooQ]]></title>
-  <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
-  <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-22T15:34:39+08:00</updated>
-  <id>http://liuminqian.github.io/</id>
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2013-09-25T10:26:54+08:00</updated>
+  <id>http://yoursite.com/</id>
   <author>
-    <name><![CDATA[MooooooQ]]></name>
-    <email><![CDATA[liuminqian0211@gmail.com]]></email>
+    <name><![CDATA[Your Name]]></name>
+    
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[iOS Dev Weekly 笔记]]></title>
-    <link href="http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji/"/>
+    <link href="http://yoursite.com/blog/2013/09/20/ios-dev-weekly-bi-ji/"/>
     <updated>2013-09-20T11:45:00+08:00</updated>
-    <id>http://liuminqian.github.io/blog/2013/09/20/ios-dev-weekly-bi-ji</id>
+    <id>http://yoursite.com/blog/2013/09/20/ios-dev-weekly-bi-ji</id>
     <content type="html"><![CDATA[<p><a href="http://iosdevweekly.com/">iOS Dev Weekly</a>每周会发表关于iOS开发方面的News, Tools, Code, Design和Business。你可以订阅下。</p>
 
 <p>下面并没有包含iosdevweekly的所有内容。</p>
 
 <h2>笔记</h2>
+
+<p><strong>Issue 112</strong> &ndash; 20/09/2013</p>
+
+<ul>
+<li><a href="http://get.helpshift.com/free-ios7-guide/">The Ultimate iOS 7 Update Guide</a>：iOS 7更新终极指南。</li>
+<li><a href="https://github.com/ryanolsonk/LLDB-QuickLook?utm_source=iOS+Dev+Weekly&amp;utm_campaign=iOS_Dev_Weekly_Issue_112&amp;utm_medium=email">LLDB-QuickLook</a>：提供了在控制台使用命令来quicklook图片、views等功能。</li>
+<li><a href="http://get.helpshift.com/free-ios7-guide/">PLCrashReporter beta with ARM64 Support</a>：PLCrashReporter beta开始支持ARM64。</li>
+<li><a href="http://www.doubleencore.com/2013/09/essential-ios-7-developers-guide/">The Essential iOS 7 Developer&rsquo;s Guide</a>：不错的iOS 7开发指南，有一个系列的文章，推荐。</li>
+<li><a href="https://github.com/marcoarment/FCModel">FCModel</a>：直接访问SQL。</li>
+<li><a href="http://blog.ittybittyapps.com/blog/2013/09/20/lifting-the-lid-on-ios-7s-uipicker/">Lifting the lid on the iOS 7 UIPicker</a>：解剖iOS 7 UIPicker。</li>
+<li><a href="http://www.theverge.com/2011/12/13/2612736/ios-history-iphone-ipad">iOS: A visual history</a>：iOS的视觉历史。</li>
+<li><a href="https://tapfame.com/ios7">iOS 7 Before and After</a>：iOS 7下，App的前后对比。</li>
+<li><a href="http://afterios7icon.tumblr.com/">After iOS 7 Icons</a>：iOS 7下，Icon的变化。</li>
+</ul>
+
 
 <p><strong>Issue 111</strong> &ndash; 13/09/2013</p>
 
@@ -54,9 +69,9 @@
   
   <entry>
     <title type="html"><![CDATA[关于NSLog的那点事]]></title>
-    <link href="http://liuminqian.github.io/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/"/>
+    <link href="http://yoursite.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/"/>
     <updated>2013-09-19T15:04:00+08:00</updated>
-    <id>http://liuminqian.github.io/blog/2013/09/19/guan-yu-nslogde-na-dian-shi</id>
+    <id>http://yoursite.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi</id>
     <content type="html"><![CDATA[<p><em>keywords:</em> NSLog, NSLogger, CocoaLumberjack, ColorLog</p>
 
 <p>对于NSLog，分为三块:基本格式、小技巧和第三方工具。</p>
@@ -122,9 +137,9 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
   
   <entry>
     <title type="html"><![CDATA[nsscreencast笔记]]></title>
-    <link href="http://liuminqian.github.io/blog/2013/09/02/nsscreencastbi-ji/"/>
+    <link href="http://yoursite.com/blog/2013/09/02/nsscreencastbi-ji/"/>
     <updated>2013-09-02T23:15:00+08:00</updated>
-    <id>http://liuminqian.github.io/blog/2013/09/02/nsscreencastbi-ji</id>
+    <id>http://yoursite.com/blog/2013/09/02/nsscreencastbi-ji</id>
     <content type="html"><![CDATA[<p><em>keywords:</em> nsscreencast, iOS开发, 笔记</p>
 
 <h2>不继续跟,内容没那么吸引人了(截至9/17/2013)</h2>
@@ -316,9 +331,9 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
   
   <entry>
     <title type="html"><![CDATA[提高在Xcode上的工作效率]]></title>
-    <link href="http://liuminqian.github.io/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/"/>
+    <link href="http://yoursite.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/"/>
     <updated>2013-08-25T22:36:00+08:00</updated>
-    <id>http://liuminqian.github.io/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu</id>
+    <id>http://yoursite.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu</id>
     <content type="html"><![CDATA[<p><em>Key words</em>: Xcode, 效率</p>
 
 <p>对于在Xcode上提高工作效率，内功在这不提，对于外力，我将它分为三类: 工具、快捷键和小技巧。主要获得的路径是通过平时积累和看 <a href="https://developer.apple.com/videos/wwdc/2012/">WWDC12</a> 上的 Session 402:Working Efficiently with Xcode。</p>
@@ -425,9 +440,9 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
   
   <entry>
     <title type="html"><![CDATA[谈iOS程序员升级之路]]></title>
-    <link href="http://liuminqian.github.io/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu/"/>
+    <link href="http://yoursite.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu/"/>
     <updated>2013-08-24T22:03:00+08:00</updated>
-    <id>http://liuminqian.github.io/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu</id>
+    <id>http://yoursite.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu</id>
     <content type="html"><![CDATA[<p><em>keywords</em>: iOS程序员，升级，成长</p>
 
 <p>抛出这么一篇博文，给大家讨论iOS程序员的升级(有哪些方向、每个方向会有哪些阶段和如何完成)提供聊资。这个题目有点大，限于本人经验非常浅，谈这个不慎惶恐，如有失偏颇，请指出。</p>
