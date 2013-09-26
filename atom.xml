@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[MooooooQ]]></title>
-  <link href="liuminqian.github.com/atom.xml" rel="self"/>
-  <link href="liuminqian.github.com/"/>
-  <updated>2013-09-26T10:32:38+08:00</updated>
+  <link href="http://liuminqian.github.com/atom.xml" rel="self"/>
+  <link href="http://liuminqian.github.com/"/>
+  <updated>2013-09-26T10:55:40+08:00</updated>
   <id>liuminqian.github.com/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[iOS博客列表]]></title>
-    <link href="liuminqian.github.com/blog/2013/09/25/iosbo-ke-lie-biao/"/>
+    <link href="http://liuminqian.github.com/blog/2013/09/25/iosbo-ke-lie-biao/"/>
     <updated>2013-09-25T12:23:00+08:00</updated>
     <id>liuminqian.github.com/blog/2013/09/25/iosbo-ke-lie-biao</id>
     <content type="html"><![CDATA[<p>下面收集了国内外比较好的iOS方面的博客。每周会从这里选些有意思的玩意儿来作为每周更新的材料。</p>
@@ -65,7 +65,7 @@
   
   <entry>
     <title type="html"><![CDATA[iOS Dev Weekly 笔记]]></title>
-    <link href="liuminqian.github.com/blog/2013/09/20/ios-dev-weekly-bi-ji/"/>
+    <link href="http://liuminqian.github.com/blog/2013/09/20/ios-dev-weekly-bi-ji/"/>
     <updated>2013-09-20T11:45:00+08:00</updated>
     <id>liuminqian.github.com/blog/2013/09/20/ios-dev-weekly-bi-ji</id>
     <content type="html"><![CDATA[<p><a href="http://iosdevweekly.com/">iOS Dev Weekly</a>每周会发表关于iOS开发方面的News, Tools, Code, Design和Business。你可以订阅下。</p>
@@ -159,7 +159,7 @@
   
   <entry>
     <title type="html"><![CDATA[关于NSLog的那点事]]></title>
-    <link href="liuminqian.github.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/"/>
+    <link href="http://liuminqian.github.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi/"/>
     <updated>2013-09-19T15:04:00+08:00</updated>
     <id>liuminqian.github.com/blog/2013/09/19/guan-yu-nslogde-na-dian-shi</id>
     <content type="html"><![CDATA[<p><em>keywords:</em> NSLog, NSLogger, CocoaLumberjack, ColorLog</p>
@@ -227,7 +227,7 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
   
   <entry>
     <title type="html"><![CDATA[nsscreencast笔记]]></title>
-    <link href="liuminqian.github.com/blog/2013/09/02/nsscreencastbi-ji/"/>
+    <link href="http://liuminqian.github.com/blog/2013/09/02/nsscreencastbi-ji/"/>
     <updated>2013-09-02T23:15:00+08:00</updated>
     <id>liuminqian.github.com/blog/2013/09/02/nsscreencastbi-ji</id>
     <content type="html"><![CDATA[<p><em>keywords:</em> nsscreencast, iOS开发, 笔记</p>
@@ -421,7 +421,7 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
   
   <entry>
     <title type="html"><![CDATA[提高在Xcode上的工作效率]]></title>
-    <link href="liuminqian.github.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/"/>
+    <link href="http://liuminqian.github.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/"/>
     <updated>2013-08-25T22:36:00+08:00</updated>
     <id>liuminqian.github.com/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu</id>
     <content type="html"><![CDATA[<p><em>Key words</em>: Xcode, 效率</p>
@@ -530,7 +530,7 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
   
   <entry>
     <title type="html"><![CDATA[谈iOS程序员升级之路]]></title>
-    <link href="liuminqian.github.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu/"/>
+    <link href="http://liuminqian.github.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu/"/>
     <updated>2013-08-24T22:03:00+08:00</updated>
     <id>liuminqian.github.com/blog/2013/08/24/tan-ioscheng-xu-yuan-sheng-ji-zhi-lu</id>
     <content type="html"><![CDATA[<p><em>keywords</em>: iOS程序员，升级，成长</p>
