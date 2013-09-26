@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-26T18:09:44+08:00</updated>
+  <updated>2013-09-26T23:40:33+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -36,6 +36,7 @@
   很多基础教程，有专门的人在翻译，你可以将语言改成中文来查找已经翻译过的文章。</li>
 <li><a href="http://blog.bignerdranch.com/">Bignerdranch</a>
    一群经验丰富的小伙伴们。</li>
+<li><a href="http://oleb.net/blog/">Ole Begemann</a></li>
 <li><a href="http://nsscreencast.com/">NSScreencast</a> 需翻墙。</li>
 <li><a href="http://pilky.me/">Pilky.me</a></li>
 <li><a href="http://jeremywsherman.com/">jeremywsherman</a></li>
@@ -153,6 +154,139 @@
 <ul>
 <li><a href="http://nilsou.com/blog/2013/08/07/xcode-5-finally-makes-interface-builder-a-viable-option-for-teams/">Mergeable XIB files</a>：Xcode 5中的IB更有利于团队协作开发，中文翻译点<a href="http://beyondvincent.com/blog/2013/09/04/111-xcode-5-finally-makes-interface-builder-a-viable-option-for-teams/">这里</a>。</li>
 <li><a href="http://rocket.github.io/">Rocket</a> @Matt开源，Rocket is a technique for building real-time functionality on top of REST web services that leverages web standards like Server-Sent Events and JSON Patch.</li>
+</ul>
+
+
+<p><strong>Issue 105</strong> &ndash; 2/08/2013</p>
+
+<ul>
+<li><a href="http://cocoa-dom.tumblr.com/post/56517731293/new-thing-i-do-in-code">New thing I do in code</a>：代码书写的一个新东西，估计目前知道的人比较少，我也是在某个开源项目才知道有这个写法，推荐。</li>
+<li><a href="http://blog.amyworrall.com/post/56517622758/omni-frameworks-part-2-using-the-document-picker">Omni Frameworks:Using the Document Picker</a>：<a href="https://github.com/omnigroup">OmniGroup</a>这个团队很牛，经常看到他们搞出来一些非常酷的东西。</li>
+<li><a href="http://nshipster.com/nshipster-quiz-3/">NSHipster Quiz</a>：非常好的Quiz。</li>
+</ul>
+
+
+<p><strong>Issue 104</strong> &ndash; 26/07/2013</p>
+
+<ul>
+<li><a href="https://github.com/onevcat/VVDocumenter-Xcode">VVDocumenter</a>：Xcode插件，书写Javadoc风格的注释，作者onevcat的<a href="http://onevcat.com/">博客</a>。</li>
+<li><a href="http://www.merowing.info/2013/07/stop-writing-data-parsing-code-in-your-apps/">Stop writing data parsing code in your Apps</a>：属性映射，减少了代码量，<a href="https://github.com/krzysztofzablocki/KZPropertyMapper">Github地址</a>。</li>
+<li><a href="https://github.com/cloudkite/Masonry">Masonry</a>：轻量级layout框架。</li>
+</ul>
+
+
+<p><strong>Issue 103</strong> &ndash; 19/07/2013</p>
+
+<ul>
+<li><a href="https://github.com/tomersh/Objective-C-Generics">Objective-C Generics</a></li>
+<li><a href="http://www.mikeabdullah.net/url-paths-cheatsheet.html">URL path retrieval cheat sheet</a></li>
+<li><a href="http://blog.securemacprogramming.com/2013/07/on-what-makes-a-good-comment/">On what makes a &ldquo;good&rdquo; comment</a>：如果正确吐槽，哈～，推荐。</li>
+</ul>
+
+
+<p><strong>Issue 102</strong> &ndash; 12/07/2013</p>
+
+<ul>
+<li><a href="https://github.com/kattrali/cocoapods-xcode-plugin">CocoaPods Xcode Plugin</a>：CocoaPods的Xcode插件。</li>
+<li><a href="http://oleb.net/blog/2013/07/nsurlconnection-api-design">On NSURLConnection API Design</a>：深入NSURLConnection API 的设计。</li>
+<li><a href="http://www.doubleencore.com/2013/07/ios-camera-availability/">iOS Camera Availability: A Focus on Assumptions</a>：一个找bug的段子，结果很出乎意料。</li>
+<li><a href="http://mariano.zerously.com/post/20670689934/keeping-badges-updated">Keeping Badges Updated</a>：清空badge的大招了。</li>
+</ul>
+
+
+<p><strong>Issue 101</strong> &ndash; 5/07/2013</p>
+
+<ul>
+<li><a href="https://github.com/Spaceman-Labs/Squash">SMSquashView</a>：很有趣的动画，描述不来，建议看看。</li>
+</ul>
+
+
+<p><strong>Issue 100</strong> &ndash; 28/06/2013</p>
+
+<ul>
+<li><a href="http://www.davemark.com/?p=1829">Resources for Mac and iOS Developers</a></li>
+<li><a href="http://inessential.com/2013/06/27/open_source_db5">DB5</a>:从plist里读取color、font等配置，并做成主题，推荐使用，<a href="https://github.com/quartermaster/DB5">Github地址</a>。</li>
+<li><a href="http://mackross.net/objc/2013/07/23/objective-c-lessons-from-go/">Objective-C Lessons from Go</a></li>
+</ul>
+
+
+<p><strong>Issue 99</strong> &ndash; 21/06/2013</p>
+
+<ul>
+<li><a href="http://nshipster.com/object-subscripting/">Object Subscripting</a>：对象下标，matt的一篇博文，推荐。</li>
+<li><a href="http://agilewarrior.wordpress.com/2012/10/06/its-not-about-the-unit-tests/">It’s not about the unit tests</a>：一篇关于unit test的讨论。</li>
+</ul>
+
+
+<p><strong>Issue 98</strong> &ndash; 14/06/2013</p>
+
+<ul>
+<li><a href="http://qnoid.com/2013/06/08/Sound-Debugging.html">Sound Debugging</a></li>
+</ul>
+
+
+<p><strong>Issue 97</strong> &ndash; 7/06/2013</p>
+
+<ul>
+<li><a href="http://www.doubleencore.com/2013/06/tutorial-finding-calls-to-uniqueidentifier-in-your-ios-app/">Find uniqueIdentifier Calls in Your iOS App</a>：文章介绍了怎么找到唯一标识。</li>
+<li><a href="http://joris.kluivers.nl/blog/2013/06/04/quartz-composer-for-ios/">Quartz Composer for iOS</a>：让.qtz文件在iOS系统跑起来的lib,但还没有支持所有pathch，<a href="https://github.com/kluivers/qc-mobile">Github地址</a>。没有玩过Quartz Composer的朋友，建议玩玩。</li>
+</ul>
+
+
+<p><strong>Issue 96</strong> &ndash; 31/05/2013</p>
+
+<ul>
+<li><a href="https://itunes.apple.com/us/app/adobe-kuler/id632313714?ls=1&amp;mt=8">Adobe Kuler for iOS</a>：推荐这个App，如果你还没用过赶紧用下。可以创建调色盘。</li>
+<li><a href="https://gist.github.com/steipete/5664345">UIKit Main Thread Guard</a>：防止UIKit在非主线程上操作，很好的一个gist，有兴趣的可以看看。</li>
+<li><a href="http://pilky.me/view/36">Optimising Autolayout</a></li>
+<li><a href="http://floriankugler.com/blog/2013/5/24/layer-trees-vs-flat-drawing-graphics-performance-across-ios-device-generations">Performance of Layer Trees vs. Flat Drawing</a>：性能比较.</li>
+<li><a href="http://stackoverflow.com/questions/8863269/how-do-i-verify-reference-count-in-arc-mode/">ARC and retainCount</a>：ARC模式下打印retaincount.</li>
+</ul>
+
+
+<p><strong>Issue 95</strong> &ndash; 24/05/2013</p>
+
+<ul>
+<li><a href="http://www.raywenderlich.com/33669/overview-of-ios-crash-reporting-tools-part-1">Overview of iOS Crash Reporting Tools</a>：iOS Crash Reporting工具回顾。</li>
+<li><a href="http://swwritings.com/post/2013-05-20-concurrent-debug-beta-app-store-builds">Concurrent Debug, Beta and App Store Builds</a>：三个不同类型的build，建议看看，挺不错的。</li>
+<li><a href="http://useyourloaf.com/blog/2013/05/21/state-preservation-and-restoration.html">State Preservation and Restoration</a>：没有做过状态保存和恢复的朋友，可以看看。</li>
+</ul>
+
+
+<p><strong>Issue 94</strong> &ndash; 17/05/2013</p>
+
+<ul>
+<li><a href="http://www.steamclock.com/blog/2013/05/apple-objective-c-javascript-bridge/">Apple’s new Objective-C to Javascript Bridge</a></li>
+<li><a href="http://nshipster.com/nscoding/">NSCoding / NSKeyedArchiver</a>：matt的一篇博文。</li>
+</ul>
+
+
+<p><strong>Issue 93</strong> 10/05/2013</p>
+
+<ul>
+<li><a href="https://github.com/fphilipe/PHFComposeBarView">PHFComposeBarView</a></li>
+<li><a href="https://github.com/NSError/ArgumentParser">ArgumentParser</a></li>
+<li><a href="http://www.mikeash.com/pyblog/friday-qa-2013-05-03-proper-use-of-asserts.html">Proper Use of Asserts</a></li>
+</ul>
+
+
+<p><strong>Issue 92</strong> 3/05/2013</p>
+
+<ul>
+<li><a href="https://github.com/facebook/xctool">xctool</a>：xcodebuild的替换。</li>
+<li><a href="https://github.com/zrxq/UIView-EasingFunctions">UIView-EasingFunctions</a></li>
+<li><a href="http://swwritings.com/post/2013-04-30-searching-for-speedy-searching">Searching For Speedy Searching</a>：加速数据库搜索。</li>
+</ul>
+
+
+<p><strong>Issue 91</strong> 26/04/2013</p>
+
+<ul>
+<li><a href="http://mneorr.github.io/Alcatraz/">Alcatraz</a>：Xcode上的包管理工具，东西挺不错，不过不太稳定。</li>
+<li><a href="http://oleb.net/blog/2013/04/compiler-warnings-for-objective-c-developers/">Compiler Warnings for Objective-C Developers</a>：Objective-C上的编译警告，你也可以参考下<a href="http://onevcat.com/2013/05/talk-about-warning/">这篇</a>。</li>
+<li><a href="http://blog.bignerdranch.com/1836-hijacking-for-fun-and-profit/">Hijacking for Fun and Profit</a></li>
+<li><a href="http://floriankugler.com/blog/2013/4/21/auto-layout-performance-on-ios">Auto Layout Performance on iOS</a>：iOS上autolayout的性能讨论。</li>
+<li><a href="https://github.com/tumblr/TMCache">TMCache</a>：在iOS中cache对象的一个lib，感觉不错。</li>
 </ul>
 
 ]]></content>
