@@ -9,8 +9,7 @@
   <meta name="author" content="Minqian Liu">
 
   
-  <meta name="description" content="下面收集了国内外比较好的iOS方面的博客。每周会从这里选些有意思的玩意儿来作为每周更新的材料。 博客不错的土豪们请和@我做朋友，拜托了！ 国外 iOSDevWeekly 关于iOS开发的一些新闻、工具、代码、设计和商业等内容，已经有上百期了。
-NSHipster 对挺多基础的东西解释的比较好。 &hellip;">
+  <meta name="description" content="第一期 &ndash; 2013年9月29日 新闻 Apple Tech Talks 2013 在中国上海的iOS Tech Talks活动将于11月12日展开，活动主要针对iOS 7。活动分为App开放日和游戏开放日，主要内容可查看链接。当你看到这篇周报的时候，申请已经截止。 iOS &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +78,118 @@ NSHipster 对挺多基础的东西解释的比较好。 &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/09/29/ioszhou-bao-di-%5B%3F%5D-qi/">iOS周报第一期</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-29T09:02:00+08:00" pubdate data-updated="true">Sep 29<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/09/29/ioszhou-bao-di-%5B%3F%5D-qi/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong>第一期 &ndash; 2013年9月29日</strong></p>
+
+<h2>新闻</h2>
+
+<h4><a href="https://developer.apple.com/tech-talks/cn/">Apple Tech Talks 2013</a></h4>
+
+<p>在中国上海的iOS Tech Talks活动将于11月12日展开，活动主要针对iOS 7。活动分为App开放日和游戏开放日，主要内容可查看<a href="https://developer.apple.com/tech-talks/cn/">链接</a>。当你看到这篇周报的时候，申请已经截止。</p>
+
+<h4><a href="http://www.leiphone.com/ios-7-multi-path-tcp.html">iOS 7的多径技术</a></h4>
+
+<p>就是说当你连着Wi-Fi和3G听豆瓣电台，Wi-Fi挂了之后，该技术保证自动连接3G来保持音乐的流畅，你也可以查看<a href="http://qz.com/126642/apples-ios7-includes-a-surprise-a-ticket-to-the-next-generation-of-the-internet/">Quartz原文</a>。</p>
+
+<h2>杂谈</h2>
+
+<h4>兼容iOS 6和iOS 7的UI</h4>
+
+<p><a href="http://weibo.com/keepthismoment">pat叔</a>在<a href="(http://www.zhihu.com/question/21697443/answer/19028817">知乎</a>进行了回答。对于这个问题，大多都会采用Method Swizzling。对Method Swizzling不大懂的朋友可以看<a href="http://www.cnblogs.com/kesalin/archive/2012/01/05/objc_method_swizzling.html">这里</a>或<a href="http://cocoadev.com/MethodSwizzling">这里</a>。当然也可以不走swizzling，<a href="http://weibo.com/hangcom">hangcom2010</a>通过所有图片都走一个ImageCenter来完成。我觉得还是Method Swizzling来得舒服。</p>
+
+<h4><a href="http://nshipster.com/afnetworking-2/">AFNetworking 2.0</a></h4>
+
+<p>AFNetworking发布了最新的2.0版本，主要<a href="https://github.com/AFNetworking/AFNetworking/wiki/AFNetworking-2.0-Migration-Guide">改进</a>：1）架构重构；2）支持NSURLSession；3）Serialization Modules；4）Expanded UIKit Extensions；5）Real-time functionality with <a href="http://rocket.github.io/">Rocket</a>。</p>
+
+<h4>iOS 7.0.2 发布</h4>
+
+<p>修复锁屏漏洞和中文输入法问题，只有20M大小。</p>
+
+<h2>博文</h2>
+
+<h4><a href="http://www.raywenderlich.com/49850/whats-new-in-objective-c-and-foundation-in-ios-7">What’s New in Objective-C and Foundation in iOS 7</a></h4>
+
+<p>介绍了Modules(还介绍了来由)、新的返回类型-instancetype(matt有篇<a href="http://nshipster.com/instancetype/">博文</a>专门讨论)和新的Foundations，中文翻译可以看<a href="http://blog.csdn.net/joywii/article/details/12103327">这里</a>。</p>
+
+<h4><a href="https://nshipster.com/ios7/">NSHipster iOS7</a></h4>
+
+<p>有人在这篇文章上看到新的SDK,做了读文本的<a href="https://github.com/kgn/Hark">项目</a>。</p>
+
+<h4><a href="http://www.sealiesoftware.com/blog/archive/2013/09/24/objc_explain_Non-pointer_isa.html">isa不再是指针</a></h4>
+
+<p>在<a href="http://www.mikeash.com/pyblog/friday-qa-2013-09-27-arm64-and-you.html">iOS的arm64</a>中，Objective-C对象的isa不再是指针了。这对普通的开发工作其实没什么影响。不过你在应用Runtime的时候，需要知道这个问题。博文里面也给出了需要注意的几个场景。</p>
+
+<h4><a href="http://www.scottlogic.com/blog/2013/09/26/tabbar-custom-transitions.html">View Controller过渡动画</a></h4>
+
+<p>博主的文章中介绍了如何自定义过渡动画和创建可交互的过渡动画，并开源了<a href="https://github.com/ColinEberhardt/VCTransitionsLibrary">VCTranstionsLibrary</a>。<a href="http://nsscreencast.com/">NSScreencast</a>的<a href="http://nsscreencast.com/episodes/86-ios-7-view-controller-transitions">Episode #86</a>和<a href="http://nsscreencast.com/episodes/88-interactive-view-controller-transitions">Episode #88</a>也介绍了这个主题。大家可以通过这两个地方学习下如何制作VC过渡动画。</p>
+
+<h4><a href="http://tiny4cocoa.com/thread/show/117/">苹果Xcode帮助文档阅读指南</a></h4>
+
+<p>对iOS doc set 不熟悉的可以看看这篇文章。</p>
+
+<h4><a href="http://beyondvincent.com/blog/2013/09/29/113-spritekit-tutorial-for-beginners-2/">Sprite Kit初级教程2</a></h4>
+
+<p>中文翻译可看<a href="http://beyondvincent.com/blog/2013/09/29/113-spritekit-tutorial-for-beginners-2/">这里</a>，<a href="http://beyondvincent.com/">破船</a>这哥们翻译真勤快！</p>
+
+<h2>代码</h2>
+
+<h4><a href="http://asciiwwdc.com">Searchable full-text transcripts of WWDC sessions</a></h4>
+
+<p>来自<a href="http://nshipster.com/">matt</a>的大福利：WWDC纯文字版，并开源<a href="https://github.com/mattt/asciiwwdc.com">asciiwwdc.com</a>。</p>
+
+<h4><a href="https://github.com/questbeat/Lin-Xcode5">Lin-Xcode5</a></h4>
+
+<p>Xcode5上的本地化文件（Localizable.strings）管理的插件。</p>
+
+<h4><a href="https://github.com/kattrali/Xcode5-Plugin-Template">Xcode5插件模版</a></h4>
+
+<p>如何制作插件可以参考<a href="http://onevcat.com/2013/02/xcode-plugin/">Xcode 4 插件制作入门</a>。</p>
+
+<h4><a href="https://github.com/shinydevelopment/SDScreenshotCapture">SDScreenshotCapture</a></h4>
+
+<p>整个屏幕截图，包括status bar。这个功能对达到特殊效果往往有更多的用处，比如状态恢复或者某些动画等。</p>
+
+<h4><a href="http://daveaddey.com/?p=1273">iOS app release checklist</a></h4>
+
+<p>iOS app发布前的检查列表，<a href="https://github.com/oisin/app-release-checklist">Github地址</a>。</p>
+
+<h2>赞助</h2>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1034,6 +1145,10 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/09/29/ioszhou-bao-di-%5B%3F%5D-qi/">iOS周报第一期</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/09/25/iosbo-ke-lie-biao/">iOS博客列表</a>
       </li>
     
@@ -1047,10 +1162,6 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
     
       <li class="post">
         <a href="/blog/2013/09/02/nsscreencastbi-ji/">nsscreencast笔记</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/">提高在Xcode上的工作效率</a>
       </li>
     
   </ul>
