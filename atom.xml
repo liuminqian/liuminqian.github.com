@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-09-29T21:23:03+08:00</updated>
+  <updated>2013-10-06T08:54:01+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS周报第002期]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/10/06/ioszhou-bao-di-002qi/"/>
+    <updated>2013-10-06T08:39:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/10/06/ioszhou-bao-di-002qi</id>
+    <content type="html"><![CDATA[<p><strong>第002期 &ndash; 2013年10月06日</strong></p>
+
+<h2>新闻</h2>
+
+<h4><a href="http://mashable.com/2013/09/26/mlb-at-the-ballpark-app/">MLB and iBeacon</a></h4>
+
+<p>iBeacon实现的一个新闻。iBeacon的介绍，以及NFC的比较可以看<a href="http://gigaom.com/2013/09/10/with-ibeacon-apple-is-going-to-dump-on-nfc-and-embrace-the-internet-of-things/">这里</a>。36kr上<a href="http://www.36kr.com/p/206594.html">iBeacon定位技术将如何走进我们的生活？</a>和<a href="http://www.36kr.com/p/206695.html">苹果iBeacon改变本地商业的10个理由</a>。大家都在关注iBeacon，也可以看到iBeacon还处于早期的位置。</p>
+
+<h2>杂谈</h2>
+
+<h4><a href="https://twitter.com/ObjectiveCStack">Objective-C SO</a></h4>
+
+<p>专门发布Stack Overflow上关于iOS和Objective-C相关内容的Twitter帐号。</p>
+
+<h2>博文</h2>
+
+<h4><a href="http://schlu.org/2013/10/01/Xcode-Asset-Catalogs.html">Xcode Asset Catalogs</a></h4>
+
+<p>比较深入的介绍了Asset Catalogs，包括基础的使用、优劣等内容。</p>
+
+<h4><a href="http://www.raywenderlich.com/50151/text-kit-tutorial">Text Kit Tutorial</a></h4>
+
+<p>Raywenderlich上的一篇Text Kit教程。</p>
+
+<h2>代码</h2>
+
+<h4><a href="github.com/neoneye/autodescribe">Autodescribe</a></h4>
+
+<p>打印类实例的属性值。我个人觉得随着Xcode的不断前进，这类lib会越来越少被用到。</p>
+
+<h4><a href="http://mentalfaculty.tumblr.com/post/62909673342/introducing-ensembles-core-data-sync-the-way-it-should">Ensembles</a></h4>
+
+<p>一个新的CoreData同步lib。</p>
+
+<h4><a href="https://github.com/IFTTT/JazzHands">Jazz Hands</a></h4>
+
+<p>基于关键帧的新手引导动画框架，动画可以通过手势、scrool views、kvo或者ReactiveCocoa来控制。</p>
+
+<h4><a href="https://github.com/seanhess/wizardwar">wizardwar</a></h4>
+
+<p>实时网络对战开源游戏。</p>
+
+<h4><a href="https://github.com/stanislaw/AFNetworkingMeter">AFNetworkingMeter</a></h4>
+
+<p>度量网络状况。</p>
+
+<p><img src="https://raw.github.com/stanislaw/AFNetworkingMeter/master/AFNetworkingMeter.png" alt="" /></p>
+
+<h4><a href="https://github.com/nicklockwood/SoundManager">SoundManager</a></h4>
+
+<p>管理声音和音乐的播放。</p>
+
+<h2>赞助</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS周报]]></title>
