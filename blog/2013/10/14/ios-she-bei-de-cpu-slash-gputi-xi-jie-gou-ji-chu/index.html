@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>iOS周报第002期 - MooooooQ</title>
+  <title>iOS 设备的CPU/GPU体系结构基础 - MooooooQ</title>
   <meta name="author" content="Minqian Liu">
 
   
-  <meta name="description" content="第002期 &ndash; 2013年10月06日 新闻 MLB and iBeacon iBeacon实现的一个新闻。iBeacon的介绍，以及NFC的比较可以看这里。36kr上iBeacon定位技术将如何走进我们的生活？和苹果iBeacon改变本地商业的10个理由。大家都在关注iBeacon， &hellip;">
+  <meta name="description" content="2013年3月9日，杭州 Key words: iOS 设备, CPU/GPU, 图形绘制，性能优化(performance optimization) 对于iOS上app的性能提升中，绘制(Drawing)是一个重要的话题。对于一些技巧总是不能完全理解和明白，所以我从最基本的硬件层开始研究。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liuminqian.github.io/blog/2013/10/06/ioszhou-bao-di-002qi">
+  <link rel="canonical" href="http://liuminqian.github.io/blog/2013/10/14/ios-she-bei-de-cpu-slash-gputi-xi-jie-gou-ji-chu">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="MooooooQ" type="application/atom+xml">
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">iOS周报第002期</h1>
+      <h1 class="entry-title">iOS 设备的CPU/GPU体系结构基础</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2013-10-06T08:39:00+08:00" pubdate data-updated="true">Oct 6<span>th</span>, 2013</time>
+<time datetime="2013-10-14T16:17:00+08:00" pubdate data-updated="true">Oct 14<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,59 +106,49 @@
   </header>
 
 
-<div class="entry-content"><p><strong>第002期 &ndash; 2013年10月06日</strong></p>
+<div class="entry-content"><p>2013年3月9日，杭州</p>
 
-<h2>新闻</h2>
+<p><em>Key words:</em> iOS 设备, CPU/GPU, 图形绘制，性能优化(performance optimization)</p>
 
-<h4><a href="http://mashable.com/2013/09/26/mlb-at-the-ballpark-app/">MLB and iBeacon</a></h4>
+<p>对于iOS上app的性能提升中，绘制(Drawing)是一个重要的话题。对于一些技巧总是不能完全理解和明白，所以我从最基本的硬件层开始研究。对于绘制速度影响最大的是GPU。文献[1]中讨论了移动设备的GPU体系结构，在这里不详述。其中下述的内容需要比较多的图形学知识，可参考《OpenGL编程指南》(红宝书)和《Real-Time Rendering》(实时计算机图形学)。</p>
 
-<p>iBeacon实现的一个新闻。iBeacon的介绍，以及NFC的比较可以看<a href="http://gigaom.com/2013/09/10/with-ibeacon-apple-is-going-to-dump-on-nfc-and-embrace-the-internet-of-things/">这里</a>。36kr上<a href="http://www.36kr.com/p/206594.html">iBeacon定位技术将如何走进我们的生活？</a>和<a href="http://www.36kr.com/p/206695.html">苹果iBeacon改变本地商业的10个理由</a>。大家都在关注iBeacon，也可以看到iBeacon还处于早期的位置。</p>
+<p>iOS设备(文献[2])都采用了PowerVR系列作为GPU。该系列采用了3D渲染技术中&mdash;分块式延迟渲染技术(Titled-Based Deferred Rendering, TBDR，如图1所示)(文献[3])。采用该技术的原因是：当前嵌入式系统所能提供的系统带宽，在面对高性能高质量的应用时依然显得不足，而且访存操作被认为是嵌入式系统中功耗的主要来源之一，所以要在当前嵌入式图形显示系统中获得高质量、低功耗的设计，关键在于降低系统的带宽需求。而分块技术是将屏幕分割为许多小块区域分别进行场景的绘制渲染，这样做的最大优势是可以大幅度降低图形处理器对深度缓存的访存带宽需求。延迟渲染技术可以减少不必要的纹理映射等计算，进一步降低系统带宽要求。文献[4]中有该技术更详细地描述。</p>
 
-<h2>杂谈</h2>
+<p><img src="http://publicopensource.qiniudn.com/TBDR.PNG" alt="" /></p>
 
-<h4><a href="https://twitter.com/ObjectiveCStack">Objective-C SO</a></h4>
+<p>图1 TBDR 文献[5]</p>
 
-<p>专门发布Stack Overflow上关于iOS和Objective-C相关内容的Twitter帐号。</p>
+<p>在图1中，值得注意的是Raster和HSR。</p>
 
-<h2>博文</h2>
+<p>Tile-Based架构的基本结构框架如图2所示。PowerVR的渲染管线如图3所示，SGX/SGX-MP的结构如图4所示。大多数SGX使用区块16*16像素大小。</p>
 
-<h4><a href="http://schlu.org/2013/10/01/Xcode-Asset-Catalogs.html">Xcode Asset Catalogs</a></h4>
+<p><img src="http://publicopensource.qiniudn.com/BasicArch.PNG" alt="" /></p>
 
-<p>比较深入的介绍了Asset Catalogs，包括基础的使用、优劣等内容。</p>
+<p>图2 基本结构框图 文献[4]P26</p>
 
-<h4><a href="http://www.raywenderlich.com/50151/text-kit-tutorial">Text Kit Tutorial</a></h4>
+<p><img src="http://publicopensource.qiniudn.com/sgx%20renderline.PNG" alt="" /></p>
 
-<p>Raywenderlich上的一篇Text Kit教程。</p>
+<p>图3 SGX渲染管线：每个分块的光栅化和片段处理 文献[5]P14</p>
 
-<h2>代码</h2>
+<p><img src="http://publicopensource.qiniudn.com/sgx:sgx-mp.PNG" alt="" /></p>
 
-<h4><a href="github.com/neoneye/autodescribe">Autodescribe</a></h4>
+<p>图4 SGX/SGX-MP 文献[5]P15</p>
 
-<p>打印类实例的属性值。我个人觉得随着Xcode的不断前进，这类lib会越来越少被用到。</p>
+<p>在iOS设备中，GPU的帧缓存区被分割成块通过块到块渲染，CPU/GPU共享同一内存(上面的图中可以很容易看出，也可参考文献[6])。</p>
 
-<h4><a href="http://mentalfaculty.tumblr.com/post/62909673342/introducing-ensembles-core-data-sync-the-way-it-should">Ensembles</a></h4>
+<h5>参考文献：</h5>
 
-<p>一个新的CoreData同步lib。</p>
+<p>[1] 移动设备GPU架构[EB/OL]. <a href="http://bastianzuehlke.wordpress.com/2012/04/05/mobile-gpus-architectures/">http://bastianzuehlke.wordpress.com/2012/04/05/mobile-gpus-architectures/</a></p>
 
-<h4><a href="https://github.com/IFTTT/JazzHands">Jazz Hands</a></h4>
+<p>[2] iOS 设备的硬件[EB/OL]. <a href="http://blakespot.com/ios_device_specifications_grid.html">http://blakespot.com/ios_device_specifications_grid.html</a></p>
 
-<p>基于关键帧的新手引导动画框架，动画可以通过手势、scrool views、kvo或者ReactiveCocoa来控制。</p>
+<p>[3] PowerVR[EB/OL]. <a href="http://en.wikipedia.org/wiki/PowerVR">http://en.wikipedia.org/wiki/PowerVR</a></p>
 
-<h4><a href="https://github.com/seanhess/wizardwar">wizardwar</a></h4>
+<p>[4] 朱玥. Tile-Based图形处理方法及高质量图形算法设计[D]. 中国科学技术大学, 2012.</p>
 
-<p>实时网络对战开源游戏。</p>
+<p>[5] PowerVR 系列架构[EB/OL]. <a href="http://www.imgtec.com/powervr/insider/docs/POWERVR%20Series5%20Graphics.SGX%20architecture%20guide%20for%20developers.1.0.8.External.pdf">http://www.imgtec.com/powervr/insider/docs/POWERVR%20Series5%20Graphics.SGX%20architecture%20guide%20for%20developers.1.0.8.External.pdf</a></p>
 
-<h4><a href="https://github.com/stanislaw/AFNetworkingMeter">AFNetworkingMeter</a></h4>
-
-<p>度量网络状况。</p>
-
-<p><img src="https://raw.github.com/stanislaw/AFNetworkingMeter/master/AFNetworkingMeter.png" alt="" /></p>
-
-<h4><a href="https://github.com/nicklockwood/SoundManager">SoundManager</a></h4>
-
-<p>管理声音和音乐的播放。</p>
-
-<h2>赞助</h2>
+<p>[6] iOS硬件指南[EB/OL]. <a href="http://docs.unity3d.com/Documentation/Manual/iphone-Hardware.html">http://docs.unity3d.com/Documentation/Manual/iphone-Hardware.html</a></p>
 </div>
 
 
@@ -181,7 +171,7 @@
   
 
 
-<time datetime="2013-10-06T08:39:00+08:00" pubdate data-updated="true">Oct 6<span>th</span>, 2013</time>
+<time datetime="2013-10-14T16:17:00+08:00" pubdate data-updated="true">Oct 14<span>th</span>, 2013</time>
       
 
 
@@ -189,7 +179,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liuminqian.github.io/blog/2013/10/06/ioszhou-bao-di-002qi/" data-via="" data-counturl="http://liuminqian.github.io/blog/2013/10/06/ioszhou-bao-di-002qi/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liuminqian.github.io/blog/2013/10/14/ios-she-bei-de-cpu-slash-gputi-xi-jie-gou-ji-chu/" data-via="" data-counturl="http://liuminqian.github.io/blog/2013/10/14/ios-she-bei-de-cpu-slash-gputi-xi-jie-gou-ji-chu/" >Tweet</a>
   
   
   
@@ -198,10 +188,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/09/29/ioszhou-bao-di-001-qi/" title="Previous Post: iOS周报第001期">&laquo; iOS周报第001期</a>
+        <a class="basic-alignment left" href="/blog/2013/10/13/ioszhou-bao-di-3qi/" title="Previous Post: iOS周报第003期">&laquo; iOS周报第003期</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/10/13/ioszhou-bao-di-3qi/" title="Next Post: iOS周报第003期">iOS周报第003期 &raquo;</a>
       
     </p>
   </footer>
@@ -268,8 +256,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://liuminqian.github.io/blog/2013/10/06/ioszhou-bao-di-002qi/';
-        var disqus_url = 'http://liuminqian.github.io/blog/2013/10/06/ioszhou-bao-di-002qi/';
+        var disqus_identifier = 'http://liuminqian.github.io/blog/2013/10/14/ios-she-bei-de-cpu-slash-gputi-xi-jie-gou-ji-chu/';
+        var disqus_url = 'http://liuminqian.github.io/blog/2013/10/14/ios-she-bei-de-cpu-slash-gputi-xi-jie-gou-ji-chu/';
         var disqus_script = 'embed.js';
       
     (function () {

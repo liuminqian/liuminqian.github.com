@@ -9,7 +9,7 @@
   <meta name="author" content="Minqian Liu">
 
   
-  <meta name="description" content="第003期 &ndash; 2013年10月13日 新闻 App Store 营销指南 Apple针对iPhone 5s和5c更新了App Store营销指南。 为什么一般的舆论都认为 Apple 或 iPhone 不行了，各种 Android 机舆论却很好？ 从Apple发布5s开始， &hellip;">
+  <meta name="description" content="2013年3月9日，杭州 Key words: iOS 设备, CPU/GPU, 图形绘制，性能优化(performance optimization) 对于iOS上app的性能提升中，绘制(Drawing)是一个重要的话题。对于一些技巧总是不能完全理解和明白，所以我从最基本的硬件层开始研究。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,7 +84,87 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/10/13/ioszhou-bao-di-3qi/">iOS周报</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/10/14/ios-she-bei-de-cpu-slash-gputi-xi-jie-gou-ji-chu/">iOS 设备的CPU/GPU体系结构基础</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-14T16:17:00+08:00" pubdate data-updated="true">Oct 14<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/10/14/ios-she-bei-de-cpu-slash-gputi-xi-jie-gou-ji-chu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>2013年3月9日，杭州</p>
+
+<p><em>Key words:</em> iOS 设备, CPU/GPU, 图形绘制，性能优化(performance optimization)</p>
+
+<p>对于iOS上app的性能提升中，绘制(Drawing)是一个重要的话题。对于一些技巧总是不能完全理解和明白，所以我从最基本的硬件层开始研究。对于绘制速度影响最大的是GPU。文献[1]中讨论了移动设备的GPU体系结构，在这里不详述。其中下述的内容需要比较多的图形学知识，可参考《OpenGL编程指南》(红宝书)和《Real-Time Rendering》(实时计算机图形学)。</p>
+
+<p>iOS设备(文献[2])都采用了PowerVR系列作为GPU。该系列采用了3D渲染技术中&mdash;分块式延迟渲染技术(Titled-Based Deferred Rendering, TBDR，如图1所示)(文献[3])。采用该技术的原因是：当前嵌入式系统所能提供的系统带宽，在面对高性能高质量的应用时依然显得不足，而且访存操作被认为是嵌入式系统中功耗的主要来源之一，所以要在当前嵌入式图形显示系统中获得高质量、低功耗的设计，关键在于降低系统的带宽需求。而分块技术是将屏幕分割为许多小块区域分别进行场景的绘制渲染，这样做的最大优势是可以大幅度降低图形处理器对深度缓存的访存带宽需求。延迟渲染技术可以减少不必要的纹理映射等计算，进一步降低系统带宽要求。文献[4]中有该技术更详细地描述。</p>
+
+<p><img src="http://publicopensource.qiniudn.com/TBDR.PNG" alt="" /></p>
+
+<p>图1 TBDR 文献[5]</p>
+
+<p>在图1中，值得注意的是Raster和HSR。</p>
+
+<p>Tile-Based架构的基本结构框架如图2所示。PowerVR的渲染管线如图3所示，SGX/SGX-MP的结构如图4所示。大多数SGX使用区块16*16像素大小。</p>
+
+<p><img src="http://publicopensource.qiniudn.com/BasicArch.PNG" alt="" /></p>
+
+<p>图2 基本结构框图 文献[4]P26</p>
+
+<p><img src="http://publicopensource.qiniudn.com/sgx%20renderline.PNG" alt="" /></p>
+
+<p>图3 SGX渲染管线：每个分块的光栅化和片段处理 文献[5]P14</p>
+
+<p><img src="http://publicopensource.qiniudn.com/sgx:sgx-mp.PNG" alt="" /></p>
+
+<p>图4 SGX/SGX-MP 文献[5]P15</p>
+
+<p>在iOS设备中，GPU的帧缓存区被分割成块通过块到块渲染，CPU/GPU共享同一内存(上面的图中可以很容易看出，也可参考文献[6])。</p>
+
+<h5>参考文献：</h5>
+
+<p>[1] 移动设备GPU架构[EB/OL]. <a href="http://bastianzuehlke.wordpress.com/2012/04/05/mobile-gpus-architectures/">http://bastianzuehlke.wordpress.com/2012/04/05/mobile-gpus-architectures/</a></p>
+
+<p>[2] iOS 设备的硬件[EB/OL]. <a href="http://blakespot.com/ios_device_specifications_grid.html">http://blakespot.com/ios_device_specifications_grid.html</a></p>
+
+<p>[3] PowerVR[EB/OL]. <a href="http://en.wikipedia.org/wiki/PowerVR">http://en.wikipedia.org/wiki/PowerVR</a></p>
+
+<p>[4] 朱玥. Tile-Based图形处理方法及高质量图形算法设计[D]. 中国科学技术大学, 2012.</p>
+
+<p>[5] PowerVR 系列架构[EB/OL]. <a href="http://www.imgtec.com/powervr/insider/docs/POWERVR%20Series5%20Graphics.SGX%20architecture%20guide%20for%20developers.1.0.8.External.pdf">http://www.imgtec.com/powervr/insider/docs/POWERVR%20Series5%20Graphics.SGX%20architecture%20guide%20for%20developers.1.0.8.External.pdf</a></p>
+
+<p>[6] iOS硬件指南[EB/OL]. <a href="http://docs.unity3d.com/Documentation/Manual/iphone-Hardware.html">http://docs.unity3d.com/Documentation/Manual/iphone-Hardware.html</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/13/ioszhou-bao-di-3qi/">iOS周报第003期</a></h1>
     
     
       <p class="meta">
@@ -200,7 +280,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/10/06/ioszhou-bao-di-002qi/">iOS周报</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/10/06/ioszhou-bao-di-002qi/">iOS周报第002期</a></h1>
     
     
       <p class="meta">
@@ -290,7 +370,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/09/29/ioszhou-bao-di-001-qi/">iOS周报</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/09/29/ioszhou-bao-di-001-qi/">iOS周报第001期</a></h1>
     
     
       <p class="meta">
@@ -1351,23 +1431,23 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/10/13/ioszhou-bao-di-3qi/">iOS周报</a>
+        <a href="/blog/2013/10/14/ios-she-bei-de-cpu-slash-gputi-xi-jie-gou-ji-chu/">iOS 设备的CPU/GPU体系结构基础</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/10/06/ioszhou-bao-di-002qi/">iOS周报</a>
+        <a href="/blog/2013/10/13/ioszhou-bao-di-3qi/">iOS周报第003期</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/09/29/ioszhou-bao-di-001-qi/">iOS周报</a>
+        <a href="/blog/2013/10/06/ioszhou-bao-di-002qi/">iOS周报第002期</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/29/ioszhou-bao-di-001-qi/">iOS周报第001期</a>
       </li>
     
       <li class="post">
         <a href="/blog/2013/09/25/iosbo-ke-lie-biao/">iOS博客列表</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/09/20/ios-dev-weekly-bi-ji/">iOS Dev Weekly 笔记</a>
       </li>
     
   </ul>
