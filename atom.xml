@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-10-14T16:32:35+08:00</updated>
+  <updated>2013-10-19T23:00:38+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Andy Matuschak对Designing for iOS: Graphics &amp; Performance的评论]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/10/19/andy-matuschakdui-designing-for-ios-graphics-and-performancede-ping-lun/"/>
+    <updated>2013-10-19T22:48:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/10/19/andy-matuschakdui-designing-for-ios-graphics-and-performancede-ping-lun</id>
+    <content type="html"><![CDATA[<p>Andy Matuschak对Designing for iOS: Graphics &amp; Performance的评论 中文翻译</p>
+
+<h2>前言</h2>
+
+<p>Reda Lemeden的<a href="http://robots.thoughtbot.com/post/36591648724/designing-for-ios-graphics-performance">Designing for iOS: Graphics &amp; Performance</a>，做过UI优化的哥们应该都比较熟悉吧，这里也有<a href="http://www.taofengping.com/2013/05/17/designing-for-ios-graphics-performance/#.UmKbBZRnJn4">taofengping的中文翻译</a>。Andy Matuschak(UIKit团队的一员)对这篇文章的评论更是受到关注。这篇文章的评论目前已经关掉，原来的部分评论可参看<a href="https://lobste.rs/s/ckm4uw/a_performance-minded_take_on_ios_design/comments/itdkfh">这里</a>。下述是我之前做的中文翻译。</p>
+
+<h2>中文翻译</h2>
+
+<p>Andy Matuschak 评论</p>
+
+<p>我将阐述在上述投稿中提到的关于离屏绘制的几个要点。你上述列出关于离屏绘制的几种情况是对的，然而这个列表中却存在两个模糊的触发机制(每种有不同的性能特点)。单个View也有可能同时需要这两个机制。这两个机制有完全不同的性能考虑。</p>
+
+<p>尤其是少量的确实是“离屏绘制”(实现了drawRect并做了Core Graphics绘制，使用Core Text[这只使用了Core Graphics])，但是这并不跟我们平常说的一样。这跟列表中的大多数的不一样的。当你实现了drawRect或者用CoreGraphics绘制，你就是使用了CPU来绘制，并且绘制是跟你的app是同步发生的。你只是简单地call一些函数(这些函数将bit写入到bitmap buffer)。</p>
+
+<p>离屏绘制的另外形式是发生在render server(一个独立的进程)上，并经过GPU来完成(不经过CPU，如前文猜测)。当OpenGL render去绘制每一层，它可能不得不为一些子层次暂停下来并将他们组合到一个单独的buffer。你可能认为GPU在这类事情上总比CPU要快，但是有些技巧需要考虑。GPU将屏上绘制切换上下文(context)到离屏绘制的代价是非常昂贵的(它必须flush pipeline 和barrier)。这样对于简单的绘制操作，设置的花费将远比在CPU通过如CoreGraohics来绘制的整体花费要大。这样的话，如果你正在去处理复杂的层次，并需要决定是使用[CALayer setShouldRasterize:]还是通过CG来绘制层次内容时，最好的方法时测试和测量。</p>
+
+<p>如果你在你的app中通过CG来绘制并在一个Layer上展示图片(需要离屏渲染)，你当然可以做两次的离屏通道。比如，如果你通过[CALayer renderInContext:]来获得一个截图，然后将截图放入一个有阴影的Layer中。当然如果你使用drawRect:或者通过CG来绘制，你可能是局部缓存。更多的请看”Polishing Your Rotation Animations&#8221;WWDC 2012。</p>
+
+<p>对于shouldRasterize的考虑在遮罩(masking)、阴影、边缘抗锯齿、和不透明组(group opacity)是完全不同的。任何一个被触发，都没有缓存，并且离屏绘制都会在每帧发生。光栅化确实需要一个离屏绘制通道，但是一旦光栅化层的子层没有改变，那么光栅化将会缓存起来并在每帧重复。</p>
+
+<p>对于缓存：如果你在你的app中大量的做了这类的绘制，那么你可能需要对存在你应用的堆中的所有这些(可能是大图)图做缓存清除。如果你收到内存警告，并且有一些图片没有被经常使用，那么你可能最好避免绘制stretchable的图片(并且当他们需要的时候lazily重新生成)。但是也可能是事情变的糟糕，所以测试也是需要的。</p>
+
+<p>Adam Martin
+Andy Matuschak</p>
+
+<p>“如果层没有改变，那为什么缓存停止工作了？”</p>
+
+<p>这是因为 对于遮罩，那些离屏通道从来没有缓存。一旦一个层的子树的光栅化被创建好了，就马上丢弃。它并没有自动缓存，这是因为离屏渲染的大多数情况是光栅化是每帧都改变的。对于大多数情况默认缓存的话将降低性能，所以只好放弃缓存。</p>
+
+<p>但是这里有非常简单的解决方案。CA很高兴为你做缓存(直到一些hightwater mark)，但是你必须明确告诉它。你可以做[CALayer setShouldRasterize:YES]。你必须告诉它你要保存的缓存的分辨率([CALayer setRasterizationScale])。当然如果你开始做任何可能每帧都引起缓存的事情的时候，你需要设置，否则的话性能将快速下降，你可以查看WWDC 2011&#8221;Understanding UIKit Rendering&#8221;和WWDC 2012&#8221;Polishing Your Interface Rotation Animations&#8221;来获得更多。</p>
+
+<h4>总结</h4>
+
+<p>还有另外一种思考渲染的方式，Nick Lockwood在<a href="http://stackoverflow.com/questions/6731545/when-does-a-view-or-layer-require-offscreen-rendering">When does a view (or layer) require offscreen rendering?</a>的回答。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS 设备的CPU/GPU体系结构基础]]></title>
