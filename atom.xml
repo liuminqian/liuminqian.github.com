@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-10-19T23:00:38+08:00</updated>
+  <updated>2013-10-20T09:22:51+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,119 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS周报第004期]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/10/20/ioszhou-bao-di-004qi/"/>
+    <updated>2013-10-20T09:21:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/10/20/ioszhou-bao-di-004qi</id>
+    <content type="html"><![CDATA[<p><strong>第004期 &ndash; 2013年10月20日</strong></p>
+
+<h2>新闻</h2>
+
+<h4><a href="http://blog.quarkslab.com/imessage-privacy.html">iMessage Privacy</a></h4>
+
+<p>讲述iMessage安全和内部原理。最近iMessage的骚扰消息是多了点。</p>
+
+<h4><a href="http://government.github.com/">GitHub Government上线</a></h4>
+
+<h2>杂谈</h2>
+
+<h4>Monkey Patching</h4>
+
+<p>这周我想让每个API请求都能先检查网络是否连接。于是定了个题目就是在不修改方法代码的情况下，对每个方法的代码前或者后面增加代码。很明显，我不希望给每个API直接加上代码，这样很不优雅。简单的Method Swizzle,如使用<a href="https://github.com/rentzsch/jrswizzle">jrswizzle</a>来替换方法，也不能完成。还有要处理多参数情况下，如何invoke方法。最后的方案是，通过class_copyMethodList获得方法列表，过滤掉不需要加代码的方法，之后参考<a href="https://gist.github.com/steipete/5664345">PSPDFReplaceMethodWithBlock</a>来替换方法，<a href="http://www.cocoachina.com/bbs/simple/?t104399.html">performSelector使用不限个参数方法</a>来invoke方法。这种技术称为Monkey Patching，你可以参看<a href="http://wufawei.com/2013/06/Monkey-Patching-iOS-with-Swizzling/">Monkey Patching iOS with Swizzling</a>。</p>
+
+<h4><a href="https://github.com/lepture/github-cards">Github Cards</a></h4>
+
+<p>你可以通过 Visit card generator:<a href="http://lab.lepture.com/github-cards/">http://lab.lepture.com/github-cards/</a>生成自己Github profile或者repo的卡片。如我的一个repo：</p>
+
+<div class="github-card" data-user="liuminqian" data-repo="svpplytable" data-width="400" data-height="150"></div>
+
+
+<script src="http://lab.lepture.com/github-cards/widget.js"></script>
+
+
+<h4><a href="http://www.cnblogs.com/biosli/p/iOS_Network_URL_Session.html">NSURLSession使用说明及后台工作流程分析</a></h4>
+
+<p>摇滚诗人 写了篇关于NSURLSession的博文。Raywenderlich有另外一篇<a href="http://www.raywenderlich.com/51127/nsurlsession-tutorial">教程</a>。Mike Abdullah <a href="http://www.mikeabdullah.net/nsurlsession-notes.html">Notes on NSURLSession</a>。<a href="http://weibo.com/tangqiaoboy">@唐巧_boy</a>也还分享了<a href="http://www.devdiv.com/iOS_iPhone-ios_nsurlsession_-thread-206819-1-1.html">iOS7新特性-NSURLSession详解</a>,<a href="http://www.iwangke.me/2013/10/15/the-future-of-cocoa-networking-nsurlsession/">Cocoa网络框架的未来:NSURLSession</a>。</p>
+
+<h2>博文</h2>
+
+<h4><a href="http://oleb.net/blog/2013/10/rob-rix-postmodern-programming/">Rob Rix on Postmodern Programming</a></h4>
+
+<p>Ole Begemann的一篇文章专门推荐了Rob Rix的<a href="https://github.com/robrix/Postmodern-Programming/blob/master/Postmodern%20Programming.md">Postmodern-Programming</a>。高端大气上档次。</p>
+
+<h4><a href="http://pilky.me/view/37">Using Storyboards</a></h4>
+
+<p>Martin讲了些关于正确使用Storyboard的内容。</p>
+
+<h4><a href="http://blog.bignerdranch.com/4005-should-i-use-a-property-or-an-instance-variable/">Should I Use a Property or an Instance Variable?</a></h4>
+
+<p>Bignerdranch刚出的一篇，讲了property和instance varible的区别和速度。结论是instance varible比property快，property相对来说调试上有优势。实验的过程有点意思，文章最后。。。</p>
+
+<h4><a href="http://blog.devtang.com/blog/2013/10/15/objective-c-object-model/">Objective-C对象模型及应用</a></h4>
+
+<p><a href="http://weibo.com/tangqiaoboy">@唐巧_boy</a>在他的<a href="http://blog.devtang.com/">唐巧的技术博客</a>新出了这篇博文，还出了<a href="http://blog.devtang.com/blog/2013/10/17/the-tech-detail-of-ape-client-1/">猿题库iOS客户端的技术细节（一）：使用多target来构建大量相似App</a>。</p>
+
+<h4><a href="http://nshipster.com/nserror/">NSError</a></h4>
+
+<p>mattt 新出了篇关于他的error之道。从code、domain和userinfo出发描述了NSError本身的结构，也讲了他对NSError的应用。</p>
+
+<h4><a href="http://onevcat.com/2013/10/vc-transition-in-ios7/">iOS7中的ViewController切换</a></h4>
+
+<p><a href="http://weibo.com/onevcat">@onevcat</a>写了篇关于ViewController过渡的中文教程。我之前分享过<a href="http://www.scottlogic.com/blog/2013/09/26/tabbar-custom-transitions.html">An Interactive Tar Bar Controller Transition</a>。</p>
+
+<h2>代码</h2>
+
+<h4><a href="https://github.com/path/FastImageCache">FastImageCache</a></h4>
+
+<p>path分享了在滚动时快速展示图片的repo，原理上跟<a href="https://github.com/rs/SDWebImage">SDWebImage</a>最大的不同是他的Mapped Memory部分，建议看看README的原理介绍部分。SDWebImage的原理可参看<a href="http://blog.csdn.net/uxyheaven/article/details/7909373">SDWebImage 笔记</a>。关于Cache，最近还有<a href="https://github.com/tumblr/TMCache">TMCache</a>，这个设计用来持久化reproduce花费巨大的临时对象，另外一个特点是并发。</p>
+
+<h4><a href="https://github.com/fotonauts/handlebars-objc">handlebars-objc</a></h4>
+
+<p>Handlebar.js的objc版本。</p>
+
+<h4><a href="https://github.com/Ceroce/CERoundProgressView">CERoundProgressView</a></h4>
+
+<p>饼图进度条。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/312e70a9303b7d79bc8b2dc1a58e1e11c2cc3d93/687474703a2f2f7777772e6365726f63652e636f6d2f6769746875622f434550726f6772657373566965772f50726f677265737356696577416c6f6e652e706e67" alt="" /><img src="https://github-camo.global.ssl.fastly.net/398025ee24e967f0739e40e3bff18adf29398b56/687474703a2f2f7777772e6365726f63652e636f6d2f6769746875622f434550726f6772657373566965772f50726f67726573735669657757697468427574746f6e2e706e67" alt="" /></p>
+
+<h4><a href="https://github.com/jonathanpenn/ui-auto-monkey">UI AutoMonkey</a></h4>
+
+<p>iOS App的压力测试脚本。</p>
+
+<p><img src="https://raw.github.com/jonathanpenn/ui-auto-monkey/master/docimg/monkey.png" alt="" /></p>
+
+<h4><a href="https://github.com/AshFurrow/FunctionalReactivePixels">FunctionalReactivePixels</a></h4>
+
+<p>用ReactiveCocoa来完成FRP(Functional Reactive Programming)的DEMO。最近<a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a>特别火。分享<a href="http://blog.leezhong.com/ios/2013/06/19/frp-reactivecocoa.html">ReactiveCocoa与Functional Reactive Programming</a>。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/6f929a98f14e03296aad72b85fedb89ca69c0740/687474703a2f2f7374617469632e617368667572726f772e636f6d2f6769746875622f67616c6c6572792e706e67" width="30%">
+<img src="https://github-camo.global.ssl.fastly.net/617e0e98fdd2bb6a2374f8b2e5227b10bcd3ec0c/687474703a2f2f7374617469632e617368667572726f772e636f6d2f6769746875622f70686f746f2e706e67" width="30%"></p>
+
+<h4><a href="https://github.com/MatthewYork/iPhone-IntroductionTutorial">iPhone-IntroductionTutorial</a></h4>
+
+<p>iPhone引导界面。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/6de4238de2af9f7f2af604dac922124ed78c3436/687474703a2f2f696d616765736861636b2e75732f612f696d673835362f383630362f696f7373696d756c61746f7273637265656e73686f746d2e706e67" width="30%">
+<img src="https://raw.github.com/MatthewYork/iPhone-IntroductionTutorial/master/Resources/Images/IntercedeScreenshot.png" width="30%"></p>
+
+<h4><a href="https://github.com/sprang/Inkpad">Inkpad</a></h4>
+
+<p>iPad上de矢量绘图app。</p>
+
+<p><img src="http://maniacdev.com/wp-content/uploads/2013/10/inkpad1.jpeg" width="30%"></p>
+
+<h4><a href="https://github.com/MobileMakersAcademy/SuProgress">SuProgress</a></h4>
+
+<p>类iOS 7 Safari风格的进度bar。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/94b19e375a3d10dfa4212f9130f1e291eb5c2635/687474703a2f2f6d6f62696c656d616b65727361636164656d792e6769746875622e636f6d2f537550726f67726573732f537550726f67726573732e676966" width="30%"></p>
+
+<h2>赞助</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Andy Matuschak对Designing for iOS: Graphics &amp; Performance的评论]]></title>
@@ -22,7 +135,7 @@
 
 <h2>前言</h2>
 
-<p>Reda Lemeden的<a href="http://robots.thoughtbot.com/post/36591648724/designing-for-ios-graphics-performance">Designing for iOS: Graphics &amp; Performance</a>，做过UI优化的哥们应该都比较熟悉吧，这里也有<a href="http://www.taofengping.com/2013/05/17/designing-for-ios-graphics-performance/#.UmKbBZRnJn4">taofengping的中文翻译</a>。Andy Matuschak(UIKit团队的一员)对这篇文章的评论更是受到关注。这篇文章的评论目前已经关掉，原来的部分评论可参看<a href="https://lobste.rs/s/ckm4uw/a_performance-minded_take_on_ios_design/comments/itdkfh">这里</a>。下述是我之前做的中文翻译。</p>
+<p>Reda Lemeden的<a href="http://robots.thoughtbot.com/post/36591648724/designing-for-ios-graphics-performance">Designing for iOS: Graphics &amp; Performance</a>，做过UI优化的哥们应该都比较熟悉吧，这里也有<a href="http://www.taofengping.com/2013/05/17/designing-for-ios-graphics-performance">taofengping的中文翻译</a>。Andy Matuschak(UIKit团队的一员)对这篇文章的评论更是受到关注。这篇文章的评论目前已经关掉，原来的部分评论可参看<a href="https://lobste.rs/s/ckm4uw/a_performance-minded_take_on_ios_design/comments/itdkfh">这里</a>。下述是我之前做的中文翻译。</p>
 
 <h2>中文翻译</h2>
 
