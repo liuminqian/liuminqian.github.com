@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-10-20T09:22:51+08:00</updated>
+  <updated>2013-10-27T09:11:15+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,73 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS周报第005期]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/10/27/ioszhou-bao-di-005qi/"/>
+    <updated>2013-10-27T09:09:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/10/27/ioszhou-bao-di-005qi</id>
+    <content type="html"><![CDATA[<p><strong>第005期 &ndash; 2013年10月27日</strong></p>
+
+<h2>新闻</h2>
+
+<h4><a href="http://engineering.linkedin.com/mobile/linkedin-intro-doing-impossible-ios">LinkedIn Intro: Doing the Impossible on iOS</a></h4>
+
+<p>LinkedIn做了个叫Rapportive的东西，它扩展了Apple内置的iOS Mail App。刚看到的时候，真感觉impossible。后来看了技术实现，整个思路还是容易理解的。</p>
+
+<h4><a href="http://www.leiphone.com/apple-new-ipad-macbook-mac.html">一分钟，让你全面了解苹果新品发布会</a></h4>
+
+<p>还没去了解的同学，赶紧去了解下。</p>
+
+<h2>杂谈</h2>
+
+<h4><a href="http://tiny4cocoa.com/thread/show/1091/">码农在家工作写APP是否可行？前段时间ibuick也在找工作么？</a></h4>
+
+<p>来自<a href="http://tiny4cocoa.com/">tiny4cocoa</a>。</p>
+
+<h4>iOS 7 UITableView Bug</h4>
+
+<p>UITableView的插入动画会retain table导致leak。</p>
+
+<p><img src="http://ww1.sinaimg.cn/bmiddle/661d48fejw1e9ss6k8hy2j20f00qotav.jpg" width="40%"></p>
+
+<h2>博文</h2>
+
+<h4>iOS Degbugging Magic</h4>
+
+<p>mattt新出了篇 <a href="http://nshipster.com/launch-arguments-and-environment-variables/">Launch Arguments &amp; Environment Variables</a>，分享了schema中Arguments Passed On Launch和Environment Variables的设置。这些设置方便了调试，如本地化、CoreData、Zombies、Memory Allocator等方面。结尾还分享了两个TN，如<a href="https://developer.apple.com/library/ios/technotes/tn2239/_index.html">iOS Debugging Magic</a>。分享另外一篇讲常用配置和schema知识点的博文，<a href="http://stablekernel.com/blog/ios-build-configurations-and-schemes/">点这里</a>。</p>
+
+<h4><a href="http://ronnqvi.st/controlling-animation-timing/">Controlling Animation Timing</a></h4>
+
+<p>对CAMediaTiming的深入研究。尤其是对timeOffset的使用那段，demo也很不错。</p>
+
+<p><img  src="http://ronnqvi.st/images/peak.gif" width="50%"></p>
+
+<h4><a href="http://www.mikeash.com/pyblog/friday-qa-2013-10-25-nsobject-the-class-and-the-protocol.html">Friday Q&amp;A 2013-10-25: NSObject: the Class and the Protocol</a></h4>
+
+<p>NSObject既是Class，也是Protocol。这是因为在Objective-C中，Class和Protocol是处在完全分离开的Namespaces中。</p>
+
+<h4><a href="http://darkdust.net/writings/objective-c/nsarray-enumeration-performance">NSArray enumeration performance examined</a></h4>
+
+<p>NSArray枚举性能。从线性枚举、并发枚举和NSArray创建，这三个维度出发进行研究。</p>
+
+<h4><a href="http://sunsetlakesoftware.com/2013/10/21/optimizing-gaussian-blurs-mobile-gpu">Optimizing Gaussian blurs on a mobile GPU</a></h4>
+
+<p>Brad Larson这篇文章是关于在mobile GPU上优化高斯模糊的。</p>
+
+<h2>代码</h2>
+
+<h4><a href="https://github.com/chendo/FuzzyAutocompletePlugin">FuzzyAutocompletePlugin</a></h4>
+
+<p>Xcode5上更灵活的补全插件。作者chendo的原理分析<a href="http://chen.do/blog/2013/10/22/reverse-engineering-xcode-with-dtrace/">Reverse engineering Xcode with dtrace</a>。Bignerdranch上有关于DTrace的资料，<a href="http://blog.bignerdranch.com/1907-hooked-on-dtrace-part-1/">Hooked on DTrace</a>。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/b1bb84ef6070c39e15784443a8482f04459c8847/687474703a2f2f662e636c2e6c792f6974656d732f33423058326a31653231336130753162327832662f66757a7a796175746f636f6d706c6574652e676966" width="50%"></p>
+
+<h4><a href="https://github.com/Alterplay/APTimeZones">APTimeZones</a></h4>
+
+<p>通过给定CLLocation计算出TimeZone。很有趣的想法，跟通过人脸识别来让人脸正确显示在图片中的想法很类似。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS周报第004期]]></title>
@@ -74,6 +141,10 @@
 
 <p><a href="http://weibo.com/onevcat">@onevcat</a>写了篇关于ViewController过渡的中文教程。我之前分享过<a href="http://www.scottlogic.com/blog/2013/09/26/tabbar-custom-transitions.html">An Interactive Tar Bar Controller Transition</a>。</p>
 
+<h4><a href="http://www.mikeash.com/pyblog/friday-qa-2013-10-11-why-registers-are-fast-and-ram-is-slow.html">Friday Q&amp;A 2013-10-11: Why Registers Are Fast and RAM Is Slow</a></h4>
+
+<p>Mike Ash写了篇为什么寄存器比内存快，阮一峰的中文<a href="http://www.ruanyifeng.com/blog/2013/10/register.html">简单翻译</a>。</p>
+
 <h2>代码</h2>
 
 <h4><a href="https://github.com/path/FastImageCache">FastImageCache</a></h4>
@@ -112,7 +183,7 @@
 
 <h4><a href="https://github.com/sprang/Inkpad">Inkpad</a></h4>
 
-<p>iPad上de矢量绘图app。</p>
+<p>iPad上的矢量绘图app。</p>
 
 <p><img src="http://maniacdev.com/wp-content/uploads/2013/10/inkpad1.jpeg" width="30%"></p>
 
@@ -473,6 +544,7 @@ Andy Matuschak</p>
   很多基础教程，有专门的人在翻译，你可以将语言改成中文来查找已经翻译过的文章。</li>
 <li><a href="http://blog.bignerdranch.com/">Bignerdranch</a>
    一群经验丰富的小伙伴们。</li>
+<li><a href="http://sunsetlakesoftware.com/blog">Brad Larson</a></li>
 <li><a href="http://oleb.net/blog/">Ole Begemann</a></li>
 <li><a href="http://nsscreencast.com/">NSScreencast</a> 需翻墙。</li>
 <li><a href="http://pilky.me/">Pilky.me</a></li>
