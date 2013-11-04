@@ -125,7 +125,7 @@
 
 <h4>根据区域主颜色生成文字颜色</h4>
 
-<p>这周我发现这样一个事情，如果一个<code>view</code>的<code>content</code>不断变化，而上面<code>label</code>的字体颜色不变化的话，会很难看。比如<code>label</code>默认字体是白色，那么<code>content</code>如果是以白色为主基调的，就基本看不清楚字了。所以我给自己想了这样一个命题，在<code>label</code>底下的<code>view</code>，如果<code>view</code>的<code>content</code>是不停的变化，那么<code>label</code>的文字也需要变化。</p>
+<p>这周我发现这样一个事情，如果一个<code>view</code>的<code>content</code>不断变化，而上面<code>label</code>的字体颜色不变化的话，会很难看。比如<code>label</code>默认字体是白色，那么<code>content</code>如果是以白色为主基调的，就基本看不清楚字了。所以我给自己想了这样一个命题，在<code>label</code>底下的<code>view</code>，如果<code>view</code>的<code>content</code>是不停的变化，那么<code>label</code>的文字颜色也需要变化。</p>
 
 <p>基本的解决思路如下：1）首先取到<code>superview</code>的<code>image</code>，既可以是<code>UIImageView</code>,也可以是<code>UIView</code>；2）然后知道<code>label</code>相对于<code>image</code>的<code>frame</code>，从而获得这个<code>frame</code>下<code>image</code>的颜色均值<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>；3）之后对获得的<code>UIColor</code>进行简单的二值化处理<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，获得是黑色还是白色；4）设置一个简单的换算方法，根据最后获得的值来算出<code>label</code>适合的<code>text color</code> 。</p>
 
@@ -163,6 +163,8 @@
 
 <p>还记得那个悬浮label么(<a href="https://github.com/jverdi/JVFloatLabeledTextField">JVFloatLabeledTextField</a>)，设计者@mds讲述了<a href="http://mattdsmith.com/float-label-pattern/">How the Float Label Pattern Started</a>。</p>
 
+<p>关于iOS 测试的一个很好的<a href="http://neglectedpotential.com/wp-content/uploads/iOS-Testing-Mind-Map-1.2.png">思维导图</a>。</p>
+
 <p>更多每周新出的一些Repo，可以Follow我的<a href="https://github.com/liuminqian">Github</a>。这里只有我个人觉得有点意思的Repo，也并不是说其他的没意思。</p>
 
 <p>今天发晚了，是因为升级系统后，相关的环境没更新好，跟大家说声对不起。</p>
@@ -170,7 +172,7 @@
 <hr/>
 <ol>
 <li id="fn:1">
-<p><a href="http://stackoverflow.com/questions/13694618/objective-c-getting-least-used-and-most-used-color-in-a-image">Objective-c &ndash; Getting least used and most used color in a image</a>，里面提到通过将image绘制在一个point上，来得到均值，很有意思的一个想法。里面提到的CGBitmapContextCreate，请看其的<a href="http://blog.csdn.net/wangyuchun_799/article/details/7804809">函数参数详解</a>。<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
+<p><a href="http://stackoverflow.com/questions/13694618/objective-c-getting-least-used-and-most-used-color-in-a-image">Objective-c &ndash; Getting least used and most used color in a image</a>，里面提到通过将image绘制在一个point上，来得到均值，很有意思的一个想法。里面提到的CGBitmapContextCreate，请看其的<a href="http://blog.csdn.net/wangyuchun_799/article/details/7804809">函数参数详解</a>。如何获得image某个区域frame的image，你可以使用CGImageCreateWithImageInRect。<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
 <li id="fn:2">
 <p>将UIColor转化为rgba(<a href="http://stackoverflow.com/questions/437113/how-to-get-rgb-values-from-uicolor">How to get RGB values from UIColor?</a>)，从而可以进行二值化。<a href="#fnref:2" rev="footnote">&#8617;</a></p></li>
 <li id="fn:3">
