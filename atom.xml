@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-11-10T09:04:03+08:00</updated>
+  <updated>2013-11-17T09:16:31+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS说 第008期]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/11/17/iosshuo-di-008qi/"/>
+    <updated>2013-11-17T09:00:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/11/17/iosshuo-di-008qi</id>
+    <content type="html"><![CDATA[<p><img src="http://publicopensource.qiniudn.com/logo_bg.png" alt="" /></p>
+
+<h2>精读</h2>
+
+<h2>推荐</h2>
+
+<h4><a href="http://wufawei.com/">iOS应用程序安全系列(翻译)</a></h4>
+
+<p>@吴发伟 对<a href="http://resources.infosecinstitute.com/">iOS Application Security</a>的翻译，原文已经超过22个part了。相对来说，看这个比直接看<code>iOS Hackers Handbook</code>和<code>Hacking and Securing iOS Application</code>简单，更容易上手。</p>
+
+<h4><a href="https://github.com/danielamitay/iHasApp">iHasApp</a></h4>
+
+<p>iHasApp允许你检测设备上安装的app。通过一长串的<code>URL Schema</code>来完成。</p>
+
+<h4><a href="https://github.com/vittoriom/VMInstrumenter">VMInstrumenter</a></h4>
+
+<p>运行时调试，跟踪和取消<code>selector</code>。</p>
+
+<h4><a href="https://github.com/Antol/APPaginalTableView">APPaginalTableView</a></h4>
+
+<p>类似于iOS 7 Weather App的动画。</p>
+
+<h4><a href="http://www.leiphone.com/telematics-from.html">车联网创业，从硬件标准化开始</a></h4>
+
+<p><a href="http://weibo.com/u/1421002833">@maomaobear</a>于雷锋网。</p>
+
+<p>上周坐了趟出租车，忽然觉得车联网的大潮可能真的要来了。大潮的速度可能比移动互联网慢，比智能家居要快，企业市场可能比家用要快。当大家都还在追寻第二波移动互联网的时候，面对车联网，你怎么想？</p>
+
+<hr />
+
+<p>更多每周新出的一些Repo，可以Follow我的<a href="https://github.com/liuminqian">Github</a>。这里只有我个人觉得有点意思的Repo，也并不是说其他的没意思。</p>
+
+<!-- 
+
+-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS说 第007期]]></title>
