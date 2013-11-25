@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>iOS周报第005期 - MooooooQ</title>
+  <title>iOS说第009期 - MooooooQ</title>
   <meta name="author" content="Minqian Liu">
 
   
-  <meta name="description" content="第005期 &ndash; 2013年10月27日 新闻 LinkedIn Intro: Doing the Impossible on iOS LinkedIn做了个叫Rapportive的东西，它扩展了Apple内置的iOS Mail App。刚看到的时候，真感觉impossible。 &hellip;">
+  <meta name="description" content="精读 OCUDL 自定义字面量实现。真赞。通过Runtime和自定义宏来实现，思路挺新颖的。OCUDL in Depth。Clang上关于Objective-C Literals。 NSFile​Manager @mattt详解了NSFile​Manager。 推荐 Can you Smell &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://liuminqian.github.io/blog/2013/10/27/ioszhou-bao-di-005qi">
+  <link rel="canonical" href="http://liuminqian.github.io/blog/2013/11/24/iosshuo-di-009qi">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="MooooooQ" type="application/atom+xml">
@@ -81,7 +81,7 @@
   
   <header>
     
-      <h1 class="entry-title">iOS周报第005期</h1>
+      <h1 class="entry-title">iOS说第009期</h1>
     
     
       <p class="meta">
@@ -97,7 +97,7 @@
   
 
 
-<time datetime="2013-10-27T09:09:00+08:00" pubdate data-updated="true">Oct 27<span>th</span>, 2013</time>
+<time datetime="2013-11-24T09:00:00+08:00" pubdate data-updated="true">Nov 24<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -106,65 +106,54 @@
   </header>
 
 
-<div class="entry-content"><p><strong>第005期 &ndash; 2013年10月27日</strong></p>
+<div class="entry-content"><p><img src="http://publicopensource.qiniudn.com/logo_bg.png" alt="" /></p>
 
-<h2>新闻</h2>
+<h2>精读</h2>
 
-<h4><a href="http://engineering.linkedin.com/mobile/linkedin-intro-doing-impossible-ios">LinkedIn Intro: Doing the Impossible on iOS</a></h4>
+<p><a href="https://github.com/dbachrach/OCUDL">OCUDL</a></p>
 
-<p>LinkedIn做了个叫Rapportive的东西，它扩展了Apple内置的iOS Mail App。刚看到的时候，真感觉impossible。后来看了技术实现，整个思路还是容易理解的。</p>
+<p>自定义字面量实现。真赞。通过Runtime和自定义宏来实现，思路挺新颖的。<a href="http://dbachrach.com/posts/ocudl-in-depth/">OCUDL in Depth</a>。Clang上关于<a href="http://clang.llvm.org/docs/ObjectiveCLiterals.html">Objective-C Literals</a>。</p>
 
-<h4><a href="http://www.leiphone.com/apple-new-ipad-macbook-mac.html">一分钟，让你全面了解苹果新品发布会</a></h4>
+<p><a href="http://nshipster.com/nsfilemanager/">NSFile​Manager</a></p>
 
-<p>还没去了解的同学，赶紧去了解下。</p>
+<p>@mattt详解了NSFile​Manager。</p>
 
-<h2>杂谈</h2>
+<h2>推荐</h2>
 
-<h4><a href="http://tiny4cocoa.com/thread/show/1091/">码农在家工作写APP是否可行？前段时间ibuick也在找工作么？</a></h4>
+<p><a href="http://www.cocoanetics.com/2013/11/can-you-smell-the-ibeacon/">Can you Smell the iBeacon?</a></p>
 
-<p>来自<a href="http://tiny4cocoa.com/">tiny4cocoa</a>。</p>
+<p>关于iBeacon的一篇文章，这次包括了相关硬件。</p>
 
-<h4>iOS 7 UITableView Bug</h4>
+<p><a href="https://github.com/jasperblues/Typhoon">Typhoon</a></p>
 
-<p>UITableView的插入动画会retain table导致leak。</p>
+<p>一种新的Objective-C依赖注入。类似的还有<a href="https://github.com/railsware/BloodMagic">BloodMagic</a>。</p>
 
-<p><img src="http://ww1.sinaimg.cn/bmiddle/661d48fejw1e9ss6k8hy2j20f00qotav.jpg" width="40%"></p>
+<p><a href="https://github.com/andrealufino/ALSystemUtilities">ALSystemUtilities</a></p>
 
-<h2>博文</h2>
+<p>各种系统信息的获取方法。类似的还有<a href="https://github.com/Shmoopi/iOS-System-Services">iOS-System-Services</a>。</p>
 
-<h4>iOS Degbugging Magic</h4>
+<p><a href="https://github.com/tomkowz/TSValidatedTextField">TSValidatedTextField</a></p>
 
-<p>mattt新出了篇 <a href="http://nshipster.com/launch-arguments-and-environment-variables/">Launch Arguments &amp; Environment Variables</a>，分享了schema中Arguments Passed On Launch和Environment Variables的设置。这些设置方便了调试，如本地化、CoreData、Zombies、Memory Allocator等方面。结尾还分享了两个TN，如<a href="https://developer.apple.com/library/ios/technotes/tn2239/_index.html">iOS Debugging Magic</a>。分享另外一篇讲常用配置和schema知识点的博文，<a href="http://stablekernel.com/blog/ios-build-configurations-and-schemes/">点这里</a>。</p>
+<p>在textfield用正则表达式进行验证。最近类似的开源项目还有很多。</p>
 
-<h4><a href="http://ronnqvi.st/controlling-animation-timing/">Controlling Animation Timing</a></h4>
+<p><a href="https://github.com/hzlzh/Best-App">Best-App</a></p>
 
-<p>对CAMediaTiming的深入研究。尤其是对timeOffset的使用那段，demo也很不错。</p>
+<p>收集&amp;推荐优秀的 Apps (Mac OS &amp; iOS)。</p>
 
-<p><img  src="http://ronnqvi.st/images/peak.gif" width="50%"></p>
+<p><a href="https://github.com/EvgenyKarkan/EKAlgorithms">EKAlgorithms</a></p>
 
-<h4><a href="http://www.mikeash.com/pyblog/friday-qa-2013-10-25-nsobject-the-class-and-the-protocol.html">Friday Q&amp;A 2013-10-25: NSObject: the Class and the Protocol</a></h4>
+<p>常见的算法实现。</p>
 
-<p>NSObject既是Class，也是Protocol。这是因为在Objective-C中，Class和Protocol是处在完全分离开的Namespaces中。</p>
+<hr />
 
-<h4><a href="http://darkdust.net/writings/objective-c/nsarray-enumeration-performance">NSArray enumeration performance examined</a></h4>
+<p>更多每周新出的一些Repo，可以Follow我的<a href="https://github.com/liuminqian">Github</a>。这里只有我个人觉得有点意思的Repo，也并不是说其他的没意思。</p>
 
-<p>NSArray枚举性能。从线性枚举、并发枚举和NSArray创建，这三个维度出发进行研究。</p>
+<!-- 
+[](http://maniacdev.com/2013/11/tutorial-proper-error-handling-in-objective-c-on-ios-and-mac)
 
-<h4><a href="http://sunsetlakesoftware.com/2013/10/21/optimizing-gaussian-blurs-mobile-gpu">Optimizing Gaussian blurs on a mobile GPU</a></h4>
+[](http://sealedabstract.com/code/nsnotificationcenter-with-blocks-considered-harmful)
+-->
 
-<p>Brad Larson这篇文章是关于在mobile GPU上优化高斯模糊的。</p>
-
-<h2>代码</h2>
-
-<h4><a href="https://github.com/chendo/FuzzyAutocompletePlugin">FuzzyAutocompletePlugin</a></h4>
-
-<p>Xcode5上更灵活的补全插件。作者chendo的原理分析<a href="http://chen.do/blog/2013/10/22/reverse-engineering-xcode-with-dtrace/">Reverse engineering Xcode with dtrace</a>。Bignerdranch上有关于DTrace的资料，<a href="http://blog.bignerdranch.com/1907-hooked-on-dtrace-part-1/">Hooked on DTrace</a>。</p>
-
-<p><img src="https://github-camo.global.ssl.fastly.net/b1bb84ef6070c39e15784443a8482f04459c8847/687474703a2f2f662e636c2e6c792f6974656d732f33423058326a31653231336130753162327832662f66757a7a796175746f636f6d706c6574652e676966" width="50%"></p>
-
-<h4><a href="https://github.com/Alterplay/APTimeZones">APTimeZones</a></h4>
-
-<p>通过给定CLLocation计算出TimeZone。很有趣的想法，跟通过人脸识别来让人脸正确显示在图片中的想法很类似。</p>
 </div>
 
 
@@ -187,7 +176,7 @@
   
 
 
-<time datetime="2013-10-27T09:09:00+08:00" pubdate data-updated="true">Oct 27<span>th</span>, 2013</time>
+<time datetime="2013-11-24T09:00:00+08:00" pubdate data-updated="true">Nov 24<span>th</span>, 2013</time>
       
 
 
@@ -195,7 +184,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liuminqian.github.io/blog/2013/10/27/ioszhou-bao-di-005qi/" data-via="" data-counturl="http://liuminqian.github.io/blog/2013/10/27/ioszhou-bao-di-005qi/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://liuminqian.github.io/blog/2013/11/24/iosshuo-di-009qi/" data-via="" data-counturl="http://liuminqian.github.io/blog/2013/11/24/iosshuo-di-009qi/" >Tweet</a>
   
   
   
@@ -204,10 +193,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/10/20/ioszhou-bao-di-004qi/" title="Previous Post: iOS周报第004期">&laquo; iOS周报第004期</a>
+        <a class="basic-alignment left" href="/blog/2013/11/17/iosshuo-di-008qi/" title="Previous Post: iOS说 第008期">&laquo; iOS说 第008期</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/11/03/ioszhou-bao-di-006qi/" title="Next Post: iOS周报第006期">iOS周报第006期 &raquo;</a>
       
     </p>
   </footer>
@@ -274,8 +261,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://liuminqian.github.io/blog/2013/10/27/ioszhou-bao-di-005qi/';
-        var disqus_url = 'http://liuminqian.github.io/blog/2013/10/27/ioszhou-bao-di-005qi/';
+        var disqus_identifier = 'http://liuminqian.github.io/blog/2013/11/24/iosshuo-di-009qi/';
+        var disqus_url = 'http://liuminqian.github.io/blog/2013/11/24/iosshuo-di-009qi/';
         var disqus_script = 'embed.js';
       
     (function () {
