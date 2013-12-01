@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-11-25T10:23:45+08:00</updated>
+  <updated>2013-12-01T10:12:39+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,62 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS说第010期]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/12/01/iosshuo-di-010qi/"/>
+    <updated>2013-12-01T09:00:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/12/01/iosshuo-di-010qi</id>
+    <content type="html"><![CDATA[<p><img src="http://publicopensource.qiniudn.com/logo_bg.png" alt="" /></p>
+
+<h2>精读</h2>
+
+<p>本周又没看到好的博文。可能因为老外都要圣诞了？</p>
+
+<h2>推荐</h2>
+
+<p><a href="http://watchdogforxcode.com/faq/">WatchDog</a></p>
+
+<p>如果你还烦恼DerivedData带来的Cache问题，你可以试试WatchDog。</p>
+
+<p><a href="http://simpholders.com/">SimPholders</a></p>
+
+<p>快速访问模拟器中的App。赞！</p>
+
+<p><a href="https://github.com/nicklockwood/iRate">iRate</a></p>
+
+<p>提示给App打分的Repo。</p>
+
+<p><a href="https://github.com/lyokato/FBDigitalFont">FBDigitalFont</a></p>
+
+<p>很酷的数字字体。还有支持模糊效果的Label:<a href="https://github.com/lyokato/FBGlowLabel">FBGlowLabel</a>。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/03df3ab5e9134b5a19e286ad3b705e5050a7cb74/687474703a2f2f7374617469632e73717561726573706163652e636f6d2f7374617469632f3531633263353339653462303332616164373035306632652f742f3532383063373262653462303565626235386333323537392f313338343137313330383839312f53637265656e73352e706e673f666f726d61743d3135303077" alt="FBDigitalFont" /></p>
+
+<p><a href="https://github.com/yackle/CLImageEditor">CLImageEditor</a></p>
+
+<p>提供了基础的图片编辑功能。</p>
+
+<p><img src="https://github.com/yackle/CLImageEditor/raw/master/CLImageEditorDemo/sample.jpg" alt="CLImageEditor" /></p>
+
+<hr />
+
+<p>更多每周新出的一些Repo，可以Follow我的<a href="https://github.com/liuminqian">Github</a>。这里只有我个人觉得有点意思的Repo，也并不是说其他的没意思。</p>
+
+<!-- 
+
+[LookBack](http://lookback.io/)
+
+收集用户操作等信息。
+
+[Developing for the M7](http://conradstoll.com/blog/2013/11/24/developing-for-the-m7)
+
+M7芯片。
+
+-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS说第009期]]></title>
