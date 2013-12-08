@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-12-01T10:12:39+08:00</updated>
+  <updated>2013-12-08T10:39:57+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS说第011期]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/12/08/iosshuo-di-011qi/"/>
+    <updated>2013-12-08T09:00:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/12/08/iosshuo-di-011qi</id>
+    <content type="html"><![CDATA[<p><img src="http://publicopensource.qiniudn.com/logo_bg.png" alt="" /></p>
+
+<h2>精读</h2>
+
+<p><a href="http://blog.bignerdranch.com/4439-foggy-macro-breakdown/">Foggy Macro Breakdown</a></p>
+
+<p>揭开宏定义的迷雾。讲了一个完整的宏定义需要注意的几个点。</p>
+
+<h2>推荐</h2>
+
+<p><a href="https://github.com/qfish/XAlign">XAlign</a></p>
+
+<p>专门用于对齐的Xcode插件。效果很赞。</p>
+
+<p><a href="https://github.com/mikr/XcAddedMarkup">XcAddedMarkup</a></p>
+
+<p>给连接和图片增加自定义标记。</p>
+
+<p><a href="https://github.com/tciuro/NanoStore">NanoStore</a></p>
+
+<p>文件存储框架。值得学习看看。</p>
+
+<p><a href="https://github.com/CanvasPod/Canvas">Canvas</a></p>
+
+<p>在Xcode上，不写代码来完成动画。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/ba061b27de1476e7ea7845d32bb9db5803509433/687474703a2f2f662e636c2e6c792f6974656d732f333530583337326532693178327932413168304b2f63616e7661732d616e696d6174696f6e2e676966" alt="" /></p>
+
+<hr />
+
+<p>更多每周新出的一些Repo，可以Follow我的<a href="https://github.com/liuminqian">Github</a>。这里只有我个人觉得有点意思的Repo，也并不是说其他的没意思。</p>
+
+<!-- 
+
+
+
+-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS说第010期]]></title>
