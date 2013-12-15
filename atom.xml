@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-12-08T10:58:20+08:00</updated>
+  <updated>2013-12-15T11:43:47+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS说第012期]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/12/15/iosshuo-di-012qi/"/>
+    <updated>2013-12-15T09:00:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/12/15/iosshuo-di-012qi</id>
+    <content type="html"><![CDATA[<p><img src="http://publicopensource.qiniudn.com/logo_bg.png" alt="" /></p>
+
+<h2>精读</h2>
+
+<p><a href="http://www.objc.io/issue-7/">Foundation</a>
+objc.io的#7 Foundation。</p>
+
+<h2>推荐</h2>
+
+<p><a href="http://iosdevelopertips.com/graphics/unicode-ios-part-1.html">Using Unicode Characters as Images for Buttons, Labels and Alerts</a></p>
+
+<p>使用Unicode字符。<a href="http://support.apple.com/kb/ts3104">如何展示Charatecter Viewer</a>。</p>
+
+<p><img src="http://iosdevelopertips.com/wp-content/uploads/2013/12/unicode1.jpg" alt="" /></p>
+
+<p><a href="https://github.com/mneorr/XCPretty">XCPretty</a></p>
+
+<p>格式化xcodebuild输出，并实时打印。</p>
+
+<p><a href="https://github.com/mikr/RestartLessOften">RestartLessOften</a></p>
+
+<p>修改参数，颜色，图片和代码，而不用重新build。另外推荐<a href="https://github.com/johnno1962/injectionforxcode">Injectionforxcode</a>。<a href="https://github.com/DyCI/dyci-main">动态代码注入工具</a>。</p>
+
+<hr />
+
+<p>更多每周新出的一些Repo，可以Follow我的<a href="https://github.com/liuminqian">Github</a>。这里只有我个人觉得有点意思的Repo，也并不是说其他的没意思。</p>
+
+<!-- 
+
+[Introduction to Core Bluetooth: Building a Heart Rate Monitor](http://www.raywenderlich.com/52080/introduction-core-bluetooth-building-heart-rate-monitor)
+
+[tweak-away](http://mysterycoconut.com/blog/2010/07/tweak-away/)
+远程调试
+
+[emojis](http://blog.manbolo.com/2012/10/29/supporting-new-emojis-on-ios-6)
+
+-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS说第011期]]></title>
