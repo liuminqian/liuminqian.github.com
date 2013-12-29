@@ -4,7 +4,7 @@
   <title><![CDATA[MooooooQ]]></title>
   <link href="http://liuminqian.github.io/atom.xml" rel="self"/>
   <link href="http://liuminqian.github.io/"/>
-  <updated>2013-12-22T13:23:49+08:00</updated>
+  <updated>2013-12-29T14:54:17+08:00</updated>
   <id>http://liuminqian.github.io/</id>
   <author>
     <name><![CDATA[Minqian Liu]]></name>
@@ -12,6 +12,62 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS说第014期]]></title>
+    <link href="http://liuminqian.github.io/blog/2013/12/29/iosshuo-di-014qi/"/>
+    <updated>2013-12-29T09:00:00+08:00</updated>
+    <id>http://liuminqian.github.io/blog/2013/12/29/iosshuo-di-014qi</id>
+    <content type="html"><![CDATA[<p><img src="http://publicopensource.qiniudn.com/logo_bg.png" alt="" /></p>
+
+<h2>精读</h2>
+
+<p><a href="https://github.com/splhack/Hello-LWF-UIKit">LWF</a></p>
+
+<p>LWF是一个动画引擎，将FLASH内容转成动画数据。这个实例展示了将Adobe Flash转为可在iOS上跑的动画。项目<a href="http://gree.github.io/lwf/">地址</a>。</p>
+
+<p><a href="https://github.com/apache/cordova-ios">Cordova-ios</a></p>
+
+<p>使用HTML,CSS,JavaScript来构建原生移动应用的平台框架。<a href="http://cordova.apache.org/">Apache Cordova介绍</a>。</p>
+
+<h2>推荐</h2>
+
+<p><a href="http://www.raywenderlich.com/53459/google-analytics-ios">Google Analytics for iOS</a></p>
+
+<p>Raywenderlich的Google Analytics for iOS教程。还有<a href="https://github.com/NZN/NZGoogleAnalytics">Mac版本</a>的。</p>
+
+<p><a href="https://github.com/piemonte/PBJVision">PBJVision</a></p>
+
+<p>Camera引擎。</p>
+
+<p><img src="https://raw.github.com/piemonte/PBJVision/master/pbj.gif" width="40%" /></p>
+
+<p><a href="https://github.com/syedhali/EZAudio">EZAudio</a></p>
+
+<p>音频框架，可用来做实时、low-latency音频处理和可视化。</p>
+
+<p><img src="https://s3-us-west-1.amazonaws.com/ezaudio-media/EZAudioJumbo-Alt.png" alt="" /></p>
+
+<p><a href="https://github.com/chrismaddern/VENSnowOverlayView">VENSnowOverlayView</a></p>
+
+<p>雪花</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/8822a8370b18b3903a61ba14d7df321a1c4228a6/687474703a2f2f63687269732e636d2f77702d636f6e74656e742f75706c6f6164732f323031332f31322f736e6f775f736964652e706e67" width="40%"></p>
+
+<hr />
+
+<p>更多每周新出的一些Repo，可以Follow我的<a href="https://github.com/liuminqian">Github</a>。这里只有我个人觉得有点意思的Repo，也并不是说其他的没意思。</p>
+
+<!-- 
+
+[runtime](http://blog.securemacprogramming.com/2013/12/by-your-_cmd/)
+
+[bluetooth](http://www.raywenderlich.com/52080/introduction-core-bluetooth-building-heart-rate-monitor)
+
+-->
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS说第013期]]></title>
@@ -1565,115 +1621,6 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
 <p>2.诊断内存问题: app的表现如何使用Xcode和Instruments来找到和修复问题，拓展阅读:<a href="http://www.raywenderlich.com/2696/instruments-tutorial-for-ios-how-to-debug-memory-leaks">Tutorial on using Zombies &ndash; Ray Wenderlich&rsquo;s blog</a>和<a href="https://developer.apple.com/library/mac/documentation/ToolsLanguages/Conceptual/Xcode_User_Guide/000-About_Xcode/about.html">Apple guide on using the static analyzer in Xcode 4</a>。</p>
 
 <p>1.Objective-C基础: Objective-C语法和内存管理，介绍了一个学习cocoa基础知识的网站<a href="http://cocoadevcentral.com/">CocoaDevCentral</a>。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[提高在Xcode上的工作效率]]></title>
-    <link href="http://liuminqian.github.io/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/"/>
-    <updated>2013-08-25T22:36:00+08:00</updated>
-    <id>http://liuminqian.github.io/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu</id>
-    <content type="html"><![CDATA[<p><em>Key words</em>: Xcode, 效率</p>
-
-<p>对于在Xcode上提高工作效率，内功在这不提，对于外力，我将它分为三类: 工具、快捷键和小技巧。主要获得的路径是通过平时积累和看 <a href="https://developer.apple.com/videos/wwdc/2012/">WWDC12</a> 上的 Session 402:Working Efficiently with Xcode。</p>
-
-<h2>一、工具类 (可参考:<a href="http://d.cocoachina.com/tools/">CocoaChina工具开发库</a>)</h2>
-
-<h3>主要推荐：</h3>
-
-<h4>1. 搜索工具: <a href="http://www.alfredapp.com">alfred</a></h4>
-
-<pre><code>介绍: 让你搜索您的Mac OS更快，更快，更快的！支持本地和网络搜索
-</code></pre>
-
-<h4>2. 调试工具: <a href="https://github.com/square/PonyDebugger">ponyDebugger</a></h4>
-
-<pre><code>介绍: Network Traffic Debugging、Core Data Browser、View Hierarchy Debugging。
-    还有其他工具和技巧，下回分享，在此不再详细阐述。
-使用教程:1) http://iiiyu.com/2013/01/14/simple-configuration-ponydebugger
-       2) https://github.com/square/PonyDebugger
-</code></pre>
-
-<h4>3. 代码自动补全的两个工具:Xcode自带的Code Snippets和Dash</h4>
-
-<h6>1）Code Snippets</h6>
-
-<pre><code>介绍：Xcode 4 自带代码片段管理工具
-使用教程:
- (1)http://blog.cnrainbird.com/index.php/2012/11/26/xcode4_de_zi_dong_wan_cheng_gong_neng_code_sense_or_code_snip(pet (网站打)开比较慢)     
-扩展:(建议将3，4这两点的代码有选择的加入Code Snippets，个人用z作为简写的开头)
- (1)Code Snippets自带的代码片段，非常实用，需要仔细查阅，新人不容易发现的简写，比如forin ，ifelse等。
- (2)https://github.com/lukeredpath/xcodesnippets xcodesnippets gem 
- (3)https://github.com/mattt/Xcode-Snippets Mattt's Snippets
- (4)https://gist.github.com/4463913 Gist of User's favorites 其他人的一些code snippets
-</code></pre>
-
-<h5>2）<a href="http://kapeli.com/">Dash</a></h5>
-
-<pre><code>介绍：代码片段管理和API文档浏览、搜索功能
-使用教程：http://scriptfans.iteye.com/blog/1543219
-</code></pre>
-
-<h2>二、快捷键 (Google: Xcode + 快捷键，<a href="http://www.cnblogs.com/yjmyzz/archive/2011/01/25/1944325.html">其他参考链接</a>,毕竟大多快捷键很常见)</h2>
-
-<p>我将这些快捷键分为:代码层的操作，Xcode本身功能的操作和其他。</p>
-
-<h4>主要推荐:</h4>
-
-<h6>表1 代码层的操作</h6>
-
-<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-3754857e9b7e1a19b2b6d9128bb64bd3.png" alt="表1 代码层的操作" /></p>
-
-<p>当然还有其他，推荐<a href="https://github.com/JugglerShu/XVim">XVim plugin</a>、<a href="http://stackoverflow.com/questions/146297/hidden-features-of-xcode">Hidden Features of Xcode 有些不能用了</a>和<a href="http://cocoasamurai.blogspot.com/2011/03/xcode-4-keyboard-shortcuts-now.html">Xcode keyboard shortcut cheat sheet</a></p>
-
-<h6>表2 Xcode本身功能的操作和其他</h6>
-
-<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-20a7091010fd5758cd23af0848c6db1b.png" alt="表2 Xcode本身功能的操作和其他" />
-注：Command + ,     , 打开Behaviors,  将Running 中Starts修改成如图1，这样每次Debug的时候，都可以看到最大化的调试窗口，但必须Command + T，新加一个Tab，并将名称修改为Debug.
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-283e390d020e8b7748d20c03c41e4b53.png" alt="图1 Behaviors" /></p>
-
-<h6>图1 Behaviors</h6>
-
-<p>我的常用Tab分为Edit, Debug, Build, DataModel, 如图2所示：
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-90a1646ab253a60ad2683a02582c0bc2.png" alt="图2 常用的Tab名" /></p>
-
-<h6>图2 常用的Tab名</h6>
-
-<p>另，还有其他快捷键，诸如： Command + `, Command + Shift + `，Command + J，Command + Control + Shift + ?, Command + R, Command + B。</p>
-
-<h2>小技巧</h2>
-
-<h4>主要推荐：</h4>
-
-<h6>1. TODO: (加个空格) 和 FIXME: (加个空格)</h6>
-
-<p>在注释中，加入这两个关键字，可以让你查看方法(control + 6)时，看到这段文字（如图3 所示），也可以App build的时候，在该处有Warning。</p>
-
-<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-064a5561f16c98ba82c3c2eff979558f.png" alt="图3查看方法" /></p>
-
-<h6>图3 方法查看</h6>
-
-<h4>2. Automator</h4>
-
-<p>介绍：Mac上自带的一款软件，只要通过点击拖拽鼠标等操作就可以将一系列动作组合成一个工作流，从而帮助你自动的(可重复的)完成一些复杂的工作。
-eg，我们需要对头文件中的import进来的文件，进行代码风格统一(按Google Style)。如果文件一多，手工地去完成这件事情将浪费大量时间。这时候，通Automator 就能很方便地完成这个任务。</p>
-
-<h4>主要步骤如下：</h4>
-
-<ol>
-<li>打开Automator，选中服务(Service)，如图4所示：
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-bb9508fcb1178f5e1849f61c95a304df.png" alt="图4" />
-
-<h6>图4</h6></li>
-<li>搜索到 运行Shell脚本，将运行Shell脚本拖拽到右侧，并在里面输入: sort | uniq。之后，勾选 输出内容替换所有文本。并保存为Sort and Uniq ，如图5所示：
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-e9abe607dbcbc60394f83468262030db.png" alt="图5" />
-
-<h6>图5</h6></li>
-<li>现在就可以用了，在代码中，选中要排序的，打开右键菜单，选择Services中的Sort and Uniq即可。</li>
-</ol>
-
-
-<h2>限于水平，有纰漏之处还望指出，盼交流，万分感谢！</h2>
 ]]></content>
   </entry>
   

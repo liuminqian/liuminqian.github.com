@@ -9,7 +9,7 @@
   <meta name="author" content="Minqian Liu">
 
   
-  <meta name="description" content="Andy Matuschak对Designing for iOS: Graphics &amp; Performance的评论 中文翻译 前言 Reda Lemeden的Designing for iOS: Graphics &amp; Performance，做过UI优化的哥们应该都比较熟悉吧， &hellip;">
+  <meta name="description" content="第004期 &ndash; 2013年10月20日 新闻 iMessage Privacy 讲述iMessage安全和内部原理。最近iMessage的骚扰消息是多了点。 GitHub Government上线 杂谈 Monkey Patching 这周我想让每个API请求都能先检查网络是否连接。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,152 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/20/ioszhou-bao-di-004qi/">iOS周报第004期</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-20T09:21:00+08:00" pubdate data-updated="true">Oct 20<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/10/20/ioszhou-bao-di-004qi/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong>第004期 &ndash; 2013年10月20日</strong></p>
+
+<h2>新闻</h2>
+
+<h4><a href="http://blog.quarkslab.com/imessage-privacy.html">iMessage Privacy</a></h4>
+
+<p>讲述iMessage安全和内部原理。最近iMessage的骚扰消息是多了点。</p>
+
+<h4><a href="http://government.github.com/">GitHub Government上线</a></h4>
+
+<h2>杂谈</h2>
+
+<h4>Monkey Patching</h4>
+
+<p>这周我想让每个API请求都能先检查网络是否连接。于是定了个题目就是在不修改方法代码的情况下，对每个方法的代码前或者后面增加代码。很明显，我不希望给每个API直接加上代码，这样很不优雅。简单的Method Swizzle,如使用<a href="https://github.com/rentzsch/jrswizzle">jrswizzle</a>来替换方法，也不能完成。还有要处理多参数情况下，如何invoke方法。最后的方案是，通过class_copyMethodList获得方法列表，过滤掉不需要加代码的方法，之后参考<a href="https://gist.github.com/steipete/5664345">PSPDFReplaceMethodWithBlock</a>来替换方法，<a href="http://www.cocoachina.com/bbs/simple/?t104399.html">performSelector使用不限个参数方法</a>来invoke方法。这种技术称为Monkey Patching，你可以参看<a href="http://wufawei.com/2013/06/Monkey-Patching-iOS-with-Swizzling/">Monkey Patching iOS with Swizzling</a>。</p>
+
+<h4><a href="https://github.com/lepture/github-cards">Github Cards</a></h4>
+
+<p>你可以通过 Visit card generator:<a href="http://lab.lepture.com/github-cards/">http://lab.lepture.com/github-cards/</a>生成自己Github profile或者repo的卡片。如我的一个repo：</p>
+
+<div class="github-card" data-user="liuminqian" data-repo="svpplytable" data-width="400" data-height="150"></div>
+
+
+<script src="http://lab.lepture.com/github-cards/widget.js"></script>
+
+
+<h4><a href="http://www.cnblogs.com/biosli/p/iOS_Network_URL_Session.html">NSURLSession使用说明及后台工作流程分析</a></h4>
+
+<p>摇滚诗人 写了篇关于NSURLSession的博文。Raywenderlich有另外一篇<a href="http://www.raywenderlich.com/51127/nsurlsession-tutorial">教程</a>。Mike Abdullah <a href="http://www.mikeabdullah.net/nsurlsession-notes.html">Notes on NSURLSession</a>。<a href="http://weibo.com/tangqiaoboy">@唐巧_boy</a>也还分享了<a href="http://www.devdiv.com/iOS_iPhone-ios_nsurlsession_-thread-206819-1-1.html">iOS7新特性-NSURLSession详解</a>,<a href="http://www.iwangke.me/2013/10/15/the-future-of-cocoa-networking-nsurlsession/">Cocoa网络框架的未来:NSURLSession</a>。</p>
+
+<h2>博文</h2>
+
+<h4><a href="http://oleb.net/blog/2013/10/rob-rix-postmodern-programming/">Rob Rix on Postmodern Programming</a></h4>
+
+<p>Ole Begemann的一篇文章专门推荐了Rob Rix的<a href="https://github.com/robrix/Postmodern-Programming/blob/master/Postmodern%20Programming.md">Postmodern-Programming</a>。高端大气上档次。</p>
+
+<h4><a href="http://pilky.me/view/37">Using Storyboards</a></h4>
+
+<p>Martin讲了些关于正确使用Storyboard的内容。</p>
+
+<h4><a href="http://blog.bignerdranch.com/4005-should-i-use-a-property-or-an-instance-variable/">Should I Use a Property or an Instance Variable?</a></h4>
+
+<p>Bignerdranch刚出的一篇，讲了property和instance varible的区别和速度。结论是instance varible比property快，property相对来说调试上有优势。实验的过程有点意思，文章最后。。。</p>
+
+<h4><a href="http://blog.devtang.com/blog/2013/10/15/objective-c-object-model/">Objective-C对象模型及应用</a></h4>
+
+<p><a href="http://weibo.com/tangqiaoboy">@唐巧_boy</a>在他的<a href="http://blog.devtang.com/">唐巧的技术博客</a>新出了这篇博文，还出了<a href="http://blog.devtang.com/blog/2013/10/17/the-tech-detail-of-ape-client-1/">猿题库iOS客户端的技术细节（一）：使用多target来构建大量相似App</a>。</p>
+
+<h4><a href="http://nshipster.com/nserror/">NSError</a></h4>
+
+<p>mattt 新出了篇关于他的error之道。从code、domain和userinfo出发描述了NSError本身的结构，也讲了他对NSError的应用。</p>
+
+<h4><a href="http://onevcat.com/2013/10/vc-transition-in-ios7/">iOS7中的ViewController切换</a></h4>
+
+<p><a href="http://weibo.com/onevcat">@onevcat</a>写了篇关于ViewController过渡的中文教程。我之前分享过<a href="http://www.scottlogic.com/blog/2013/09/26/tabbar-custom-transitions.html">An Interactive Tar Bar Controller Transition</a>。</p>
+
+<h4><a href="http://www.mikeash.com/pyblog/friday-qa-2013-10-11-why-registers-are-fast-and-ram-is-slow.html">Friday Q&amp;A 2013-10-11: Why Registers Are Fast and RAM Is Slow</a></h4>
+
+<p>Mike Ash写了篇为什么寄存器比内存快，阮一峰的中文<a href="http://www.ruanyifeng.com/blog/2013/10/register.html">简单翻译</a>。</p>
+
+<h2>代码</h2>
+
+<h4><a href="https://github.com/path/FastImageCache">FastImageCache</a></h4>
+
+<p>path分享了在滚动时快速展示图片的repo，原理上跟<a href="https://github.com/rs/SDWebImage">SDWebImage</a>最大的不同是他的Mapped Memory部分，建议看看README的原理介绍部分。SDWebImage的原理可参看<a href="http://blog.csdn.net/uxyheaven/article/details/7909373">SDWebImage 笔记</a>。关于Cache，最近还有<a href="https://github.com/tumblr/TMCache">TMCache</a>，这个设计用来持久化reproduce花费巨大的临时对象，另外一个特点是并发。</p>
+
+<h4><a href="https://github.com/fotonauts/handlebars-objc">handlebars-objc</a></h4>
+
+<p>Handlebar.js的objc版本。</p>
+
+<h4><a href="https://github.com/Ceroce/CERoundProgressView">CERoundProgressView</a></h4>
+
+<p>饼图进度条。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/312e70a9303b7d79bc8b2dc1a58e1e11c2cc3d93/687474703a2f2f7777772e6365726f63652e636f6d2f6769746875622f434550726f6772657373566965772f50726f677265737356696577416c6f6e652e706e67" alt="" /><img src="https://github-camo.global.ssl.fastly.net/398025ee24e967f0739e40e3bff18adf29398b56/687474703a2f2f7777772e6365726f63652e636f6d2f6769746875622f434550726f6772657373566965772f50726f67726573735669657757697468427574746f6e2e706e67" alt="" /></p>
+
+<h4><a href="https://github.com/jonathanpenn/ui-auto-monkey">UI AutoMonkey</a></h4>
+
+<p>iOS App的压力测试脚本。</p>
+
+<p><img src="https://raw.github.com/jonathanpenn/ui-auto-monkey/master/docimg/monkey.png" alt="" /></p>
+
+<h4><a href="https://github.com/AshFurrow/FunctionalReactivePixels">FunctionalReactivePixels</a></h4>
+
+<p>用ReactiveCocoa来完成FRP(Functional Reactive Programming)的DEMO。最近<a href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a>特别火。分享<a href="http://blog.leezhong.com/ios/2013/06/19/frp-reactivecocoa.html">ReactiveCocoa与Functional Reactive Programming</a>。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/6f929a98f14e03296aad72b85fedb89ca69c0740/687474703a2f2f7374617469632e617368667572726f772e636f6d2f6769746875622f67616c6c6572792e706e67" width="30%">
+<img src="https://github-camo.global.ssl.fastly.net/617e0e98fdd2bb6a2374f8b2e5227b10bcd3ec0c/687474703a2f2f7374617469632e617368667572726f772e636f6d2f6769746875622f70686f746f2e706e67" width="30%"></p>
+
+<h4><a href="https://github.com/MatthewYork/iPhone-IntroductionTutorial">iPhone-IntroductionTutorial</a></h4>
+
+<p>iPhone引导界面。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/6de4238de2af9f7f2af604dac922124ed78c3436/687474703a2f2f696d616765736861636b2e75732f612f696d673835362f383630362f696f7373696d756c61746f7273637265656e73686f746d2e706e67" width="30%">
+<img src="https://raw.github.com/MatthewYork/iPhone-IntroductionTutorial/master/Resources/Images/IntercedeScreenshot.png" width="30%"></p>
+
+<h4><a href="https://github.com/sprang/Inkpad">Inkpad</a></h4>
+
+<p>iPad上的矢量绘图app。</p>
+
+<p><img src="http://maniacdev.com/wp-content/uploads/2013/10/inkpad1.jpeg" width="30%"></p>
+
+<h4><a href="https://github.com/MobileMakersAcademy/SuProgress">SuProgress</a></h4>
+
+<p>类iOS 7 Safari风格的进度bar。</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/94b19e375a3d10dfa4212f9130f1e291eb5c2635/687474703a2f2f6d6f62696c656d616b65727361636164656d792e6769746875622e636f6d2f537550726f67726573732f537550726f67726573732e676966" width="30%"></p>
+
+<h2>赞助</h2>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1236,144 +1382,6 @@ printf("%s\nLine %d:\n", __FILE__, __LINE__);
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/">提高在Xcode上的工作效率</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-25T22:36:00+08:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><em>Key words</em>: Xcode, 效率</p>
-
-<p>对于在Xcode上提高工作效率，内功在这不提，对于外力，我将它分为三类: 工具、快捷键和小技巧。主要获得的路径是通过平时积累和看 <a href="https://developer.apple.com/videos/wwdc/2012/">WWDC12</a> 上的 Session 402:Working Efficiently with Xcode。</p>
-
-<h2>一、工具类 (可参考:<a href="http://d.cocoachina.com/tools/">CocoaChina工具开发库</a>)</h2>
-
-<h3>主要推荐：</h3>
-
-<h4>1. 搜索工具: <a href="http://www.alfredapp.com">alfred</a></h4>
-
-<pre><code>介绍: 让你搜索您的Mac OS更快，更快，更快的！支持本地和网络搜索
-</code></pre>
-
-<h4>2. 调试工具: <a href="https://github.com/square/PonyDebugger">ponyDebugger</a></h4>
-
-<pre><code>介绍: Network Traffic Debugging、Core Data Browser、View Hierarchy Debugging。
-    还有其他工具和技巧，下回分享，在此不再详细阐述。
-使用教程:1) http://iiiyu.com/2013/01/14/simple-configuration-ponydebugger
-       2) https://github.com/square/PonyDebugger
-</code></pre>
-
-<h4>3. 代码自动补全的两个工具:Xcode自带的Code Snippets和Dash</h4>
-
-<h6>1）Code Snippets</h6>
-
-<pre><code>介绍：Xcode 4 自带代码片段管理工具
-使用教程:
- (1)http://blog.cnrainbird.com/index.php/2012/11/26/xcode4_de_zi_dong_wan_cheng_gong_neng_code_sense_or_code_snip(pet (网站打)开比较慢)     
-扩展:(建议将3，4这两点的代码有选择的加入Code Snippets，个人用z作为简写的开头)
- (1)Code Snippets自带的代码片段，非常实用，需要仔细查阅，新人不容易发现的简写，比如forin ，ifelse等。
- (2)https://github.com/lukeredpath/xcodesnippets xcodesnippets gem 
- (3)https://github.com/mattt/Xcode-Snippets Mattt's Snippets
- (4)https://gist.github.com/4463913 Gist of User's favorites 其他人的一些code snippets
-</code></pre>
-
-<h5>2）<a href="http://kapeli.com/">Dash</a></h5>
-
-<pre><code>介绍：代码片段管理和API文档浏览、搜索功能
-使用教程：http://scriptfans.iteye.com/blog/1543219
-</code></pre>
-
-<h2>二、快捷键 (Google: Xcode + 快捷键，<a href="http://www.cnblogs.com/yjmyzz/archive/2011/01/25/1944325.html">其他参考链接</a>,毕竟大多快捷键很常见)</h2>
-
-<p>我将这些快捷键分为:代码层的操作，Xcode本身功能的操作和其他。</p>
-
-<h4>主要推荐:</h4>
-
-<h6>表1 代码层的操作</h6>
-
-<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-3754857e9b7e1a19b2b6d9128bb64bd3.png" alt="表1 代码层的操作" /></p>
-
-<p>当然还有其他，推荐<a href="https://github.com/JugglerShu/XVim">XVim plugin</a>、<a href="http://stackoverflow.com/questions/146297/hidden-features-of-xcode">Hidden Features of Xcode 有些不能用了</a>和<a href="http://cocoasamurai.blogspot.com/2011/03/xcode-4-keyboard-shortcuts-now.html">Xcode keyboard shortcut cheat sheet</a></p>
-
-<h6>表2 Xcode本身功能的操作和其他</h6>
-
-<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-20a7091010fd5758cd23af0848c6db1b.png" alt="表2 Xcode本身功能的操作和其他" />
-注：Command + ,     , 打开Behaviors,  将Running 中Starts修改成如图1，这样每次Debug的时候，都可以看到最大化的调试窗口，但必须Command + T，新加一个Tab，并将名称修改为Debug.
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-283e390d020e8b7748d20c03c41e4b53.png" alt="图1 Behaviors" /></p>
-
-<h6>图1 Behaviors</h6>
-
-<p>我的常用Tab分为Edit, Debug, Build, DataModel, 如图2所示：
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-90a1646ab253a60ad2683a02582c0bc2.png" alt="图2 常用的Tab名" /></p>
-
-<h6>图2 常用的Tab名</h6>
-
-<p>另，还有其他快捷键，诸如： Command + `, Command + Shift + `，Command + J，Command + Control + Shift + ?, Command + R, Command + B。</p>
-
-<h2>小技巧</h2>
-
-<h4>主要推荐：</h4>
-
-<h6>1. TODO: (加个空格) 和 FIXME: (加个空格)</h6>
-
-<p>在注释中，加入这两个关键字，可以让你查看方法(control + 6)时，看到这段文字（如图3 所示），也可以App build的时候，在该处有Warning。</p>
-
-<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-064a5561f16c98ba82c3c2eff979558f.png" alt="图3查看方法" /></p>
-
-<h6>图3 方法查看</h6>
-
-<h4>2. Automator</h4>
-
-<p>介绍：Mac上自带的一款软件，只要通过点击拖拽鼠标等操作就可以将一系列动作组合成一个工作流，从而帮助你自动的(可重复的)完成一些复杂的工作。
-eg，我们需要对头文件中的import进来的文件，进行代码风格统一(按Google Style)。如果文件一多，手工地去完成这件事情将浪费大量时间。这时候，通Automator 就能很方便地完成这个任务。</p>
-
-<h4>主要步骤如下：</h4>
-
-<ol>
-<li>打开Automator，选中服务(Service)，如图4所示：
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-bb9508fcb1178f5e1849f61c95a304df.png" alt="图4" />
-
-<h6>图4</h6></li>
-<li>搜索到 运行Shell脚本，将运行Shell脚本拖拽到右侧，并在里面输入: sort | uniq。之后，勾选 输出内容替换所有文本。并保存为Sort and Uniq ，如图5所示：
-<img src="http://easyspace.b0.upaiyun.com//website/2013-03-e9abe607dbcbc60394f83468262030db.png" alt="图5" />
-
-<h6>图5</h6></li>
-<li>现在就可以用了，在代码中，选中要排序的，打开右键菜单，选择Services中的Sort and Uniq即可。</li>
-</ol>
-
-
-<h2>限于水平，有纰漏之处还望指出，盼交流，万分感谢！</h2>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -1391,6 +1399,10 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/12/29/iosshuo-di-014qi/">iOS说第014期</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/12/22/iosshuo-di-013qi/">iOS说第013期</a>
       </li>
     
@@ -1404,10 +1416,6 @@ eg，我们需要对头文件中的import进来的文件，进行代码风格统
     
       <li class="post">
         <a href="/blog/2013/12/01/iosshuo-di-010qi/">iOS说第010期</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/11/24/iosshuo-di-009qi/">iOS说第009期</a>
       </li>
     
   </ul>

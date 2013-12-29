@@ -9,7 +9,7 @@
   <meta name="author" content="Minqian Liu">
 
   
-  <meta name="description" content="keywords: iOS程序员，升级，成长 抛出这么一篇博文，给大家讨论iOS程序员的升级(有哪些方向、每个方向会有哪些阶段和如何完成)提供聊资。这个题目有点大，限于本人经验非常浅，谈这个不慎惶恐，如有失偏颇，请指出。 iOS程序员约是从2008年开始急剧增加。在国内，整个行业还是比较年轻， &hellip;">
+  <meta name="description" content="Key words: Xcode, 效率 对于在Xcode上提高工作效率，内功在这不提，对于外力，我将它分为三类: 工具、快捷键和小技巧。主要获得的路径是通过平时积累和看 WWDC12 上的 Session 402:Working Efficiently with Xcode。 一、工具类 ( &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,144 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/">提高在Xcode上的工作效率</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-25T22:36:00+08:00" pubdate data-updated="true">Aug 25<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/08/25/ti-gao-zai-xcodeshang-de-gong-zuo-xiao-lu/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><em>Key words</em>: Xcode, 效率</p>
+
+<p>对于在Xcode上提高工作效率，内功在这不提，对于外力，我将它分为三类: 工具、快捷键和小技巧。主要获得的路径是通过平时积累和看 <a href="https://developer.apple.com/videos/wwdc/2012/">WWDC12</a> 上的 Session 402:Working Efficiently with Xcode。</p>
+
+<h2>一、工具类 (可参考:<a href="http://d.cocoachina.com/tools/">CocoaChina工具开发库</a>)</h2>
+
+<h3>主要推荐：</h3>
+
+<h4>1. 搜索工具: <a href="http://www.alfredapp.com">alfred</a></h4>
+
+<pre><code>介绍: 让你搜索您的Mac OS更快，更快，更快的！支持本地和网络搜索
+</code></pre>
+
+<h4>2. 调试工具: <a href="https://github.com/square/PonyDebugger">ponyDebugger</a></h4>
+
+<pre><code>介绍: Network Traffic Debugging、Core Data Browser、View Hierarchy Debugging。
+    还有其他工具和技巧，下回分享，在此不再详细阐述。
+使用教程:1) http://iiiyu.com/2013/01/14/simple-configuration-ponydebugger
+       2) https://github.com/square/PonyDebugger
+</code></pre>
+
+<h4>3. 代码自动补全的两个工具:Xcode自带的Code Snippets和Dash</h4>
+
+<h6>1）Code Snippets</h6>
+
+<pre><code>介绍：Xcode 4 自带代码片段管理工具
+使用教程:
+ (1)http://blog.cnrainbird.com/index.php/2012/11/26/xcode4_de_zi_dong_wan_cheng_gong_neng_code_sense_or_code_snip(pet (网站打)开比较慢)     
+扩展:(建议将3，4这两点的代码有选择的加入Code Snippets，个人用z作为简写的开头)
+ (1)Code Snippets自带的代码片段，非常实用，需要仔细查阅，新人不容易发现的简写，比如forin ，ifelse等。
+ (2)https://github.com/lukeredpath/xcodesnippets xcodesnippets gem 
+ (3)https://github.com/mattt/Xcode-Snippets Mattt's Snippets
+ (4)https://gist.github.com/4463913 Gist of User's favorites 其他人的一些code snippets
+</code></pre>
+
+<h5>2）<a href="http://kapeli.com/">Dash</a></h5>
+
+<pre><code>介绍：代码片段管理和API文档浏览、搜索功能
+使用教程：http://scriptfans.iteye.com/blog/1543219
+</code></pre>
+
+<h2>二、快捷键 (Google: Xcode + 快捷键，<a href="http://www.cnblogs.com/yjmyzz/archive/2011/01/25/1944325.html">其他参考链接</a>,毕竟大多快捷键很常见)</h2>
+
+<p>我将这些快捷键分为:代码层的操作，Xcode本身功能的操作和其他。</p>
+
+<h4>主要推荐:</h4>
+
+<h6>表1 代码层的操作</h6>
+
+<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-3754857e9b7e1a19b2b6d9128bb64bd3.png" alt="表1 代码层的操作" /></p>
+
+<p>当然还有其他，推荐<a href="https://github.com/JugglerShu/XVim">XVim plugin</a>、<a href="http://stackoverflow.com/questions/146297/hidden-features-of-xcode">Hidden Features of Xcode 有些不能用了</a>和<a href="http://cocoasamurai.blogspot.com/2011/03/xcode-4-keyboard-shortcuts-now.html">Xcode keyboard shortcut cheat sheet</a></p>
+
+<h6>表2 Xcode本身功能的操作和其他</h6>
+
+<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-20a7091010fd5758cd23af0848c6db1b.png" alt="表2 Xcode本身功能的操作和其他" />
+注：Command + ,     , 打开Behaviors,  将Running 中Starts修改成如图1，这样每次Debug的时候，都可以看到最大化的调试窗口，但必须Command + T，新加一个Tab，并将名称修改为Debug.
+<img src="http://easyspace.b0.upaiyun.com//website/2013-03-283e390d020e8b7748d20c03c41e4b53.png" alt="图1 Behaviors" /></p>
+
+<h6>图1 Behaviors</h6>
+
+<p>我的常用Tab分为Edit, Debug, Build, DataModel, 如图2所示：
+<img src="http://easyspace.b0.upaiyun.com//website/2013-03-90a1646ab253a60ad2683a02582c0bc2.png" alt="图2 常用的Tab名" /></p>
+
+<h6>图2 常用的Tab名</h6>
+
+<p>另，还有其他快捷键，诸如： Command + `, Command + Shift + `，Command + J，Command + Control + Shift + ?, Command + R, Command + B。</p>
+
+<h2>小技巧</h2>
+
+<h4>主要推荐：</h4>
+
+<h6>1. TODO: (加个空格) 和 FIXME: (加个空格)</h6>
+
+<p>在注释中，加入这两个关键字，可以让你查看方法(control + 6)时，看到这段文字（如图3 所示），也可以App build的时候，在该处有Warning。</p>
+
+<p><img src="http://easyspace.b0.upaiyun.com//website/2013-03-064a5561f16c98ba82c3c2eff979558f.png" alt="图3查看方法" /></p>
+
+<h6>图3 方法查看</h6>
+
+<h4>2. Automator</h4>
+
+<p>介绍：Mac上自带的一款软件，只要通过点击拖拽鼠标等操作就可以将一系列动作组合成一个工作流，从而帮助你自动的(可重复的)完成一些复杂的工作。
+eg，我们需要对头文件中的import进来的文件，进行代码风格统一(按Google Style)。如果文件一多，手工地去完成这件事情将浪费大量时间。这时候，通Automator 就能很方便地完成这个任务。</p>
+
+<h4>主要步骤如下：</h4>
+
+<ol>
+<li>打开Automator，选中服务(Service)，如图4所示：
+<img src="http://easyspace.b0.upaiyun.com//website/2013-03-bb9508fcb1178f5e1849f61c95a304df.png" alt="图4" />
+
+<h6>图4</h6></li>
+<li>搜索到 运行Shell脚本，将运行Shell脚本拖拽到右侧，并在里面输入: sort | uniq。之后，勾选 输出内容替换所有文本。并保存为Sort and Uniq ，如图5所示：
+<img src="http://easyspace.b0.upaiyun.com//website/2013-03-e9abe607dbcbc60394f83468262030db.png" alt="图5" />
+
+<h6>图5</h6></li>
+<li>现在就可以用了，在代码中，选中要排序的，打开右键菜单，选择Services中的Sort and Uniq即可。</li>
+</ol>
+
+
+<h2>限于水平，有纰漏之处还望指出，盼交流，万分感谢！</h2>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -210,6 +348,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/12/29/iosshuo-di-014qi/">iOS说第014期</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/12/22/iosshuo-di-013qi/">iOS说第013期</a>
       </li>
     
@@ -223,10 +365,6 @@
     
       <li class="post">
         <a href="/blog/2013/12/01/iosshuo-di-010qi/">iOS说第010期</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/11/24/iosshuo-di-009qi/">iOS说第009期</a>
       </li>
     
   </ul>
