@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://liuminqian.github.io/sitemap.xml 
